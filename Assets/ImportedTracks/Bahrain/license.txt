@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bahrain International Circuit
+* source:	https://sketchfab.com/3d-models/bahrain-international-circuit-e93b0a1892c44efebbe0a92bf1ff479d
+* author:	Dave Love SketchFab (https://sketchfab.com/Tyler_Dave)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bahrain International Circuit" (https://sketchfab.com/3d-models/bahrain-international-circuit-e93b0a1892c44efebbe0a92bf1ff479d) by Dave Love SketchFab (https://sketchfab.com/Tyler_Dave) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

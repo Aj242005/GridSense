@@ -1,0 +1,11 @@
+Model Information:
+* title:	Suzuka Circuit 2001 layout
+* source:	https://sketchfab.com/3d-models/suzuka-circuit-2001-layout-0b1085d93dfa4e81aab2c83c26bf185b
+* author:	Dave Bored SketchFab (https://sketchfab.com/Tyler_Dave)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Suzuka Circuit 2001 layout" (https://sketchfab.com/3d-models/suzuka-circuit-2001-layout-0b1085d93dfa4e81aab2c83c26bf185b) by Dave Bored SketchFab (https://sketchfab.com/Tyler_Dave) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
