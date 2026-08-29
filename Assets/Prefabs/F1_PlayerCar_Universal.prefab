@@ -739,6 +739,8 @@ GameObject:
   - component: {fileID: 7092849110081941849}
   - component: {fileID: 7040879526778047529}
   - component: {fileID: 1112987653087933201}
+  - component: {fileID: 8327596310409137802}
+  - component: {fileID: 3730549948815985788}
   m_Layer: 0
   m_Name: F1_PlayerCar_Universal
   m_TagString: Untagged
@@ -1008,10 +1010,10 @@ MonoBehaviour:
     TyreTempC: 95
     BrakeTempC: 187.69951
     TyreWearRateCurrent: 0
-    EnergyRemainingPct: 82.09183
+    EnergyRemainingPct: 100
     DeploymentMode: 1
     Braking: 0
-    FuelLoadKg: 99.69274
+    FuelLoadKg: 100
     GapAheadS: 1.2665616
     HasGapAhead: 1
     GapBehindS: 0
@@ -1108,6 +1110,44 @@ MonoBehaviour:
   autopilotTargetSpeedKmh: 260
   spawnPosition: {x: -358.4, y: 98.36889, z: 0}
   spawnRotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+--- !u!114 &8327596310409137802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2847399655457160027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
+  m_PanelSettings: {fileID: 11400000, guid: 0f5f2affef440044ba5fc57f7b7a5765, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: f418dc00376c72841847f69901832472, type: 3}
+  m_SortingOrder: 0
+  m_Position: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+  m_PivotReferenceSize: 0
+  m_Pivot: 0
+  m_WorldSpaceCollider: {fileID: 0}
+--- !u!114 &3730549948815985788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2847399655457160027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 895aabd6a51fe1b42a412a8531a16185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GridSense.UI.TyreValidationDashboard
+  validationManager: {fileID: 0}
+  vehicle: {fileID: 0}
+  sentisModel: {fileID: 0}
 --- !u!1 &3287566332640720425
 GameObject:
   m_ObjectHideFlags: 0

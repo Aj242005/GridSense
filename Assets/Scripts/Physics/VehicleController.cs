@@ -75,14 +75,19 @@ namespace GridSense.Physics
 
         private void Awake()
         {
-            rb = GetComponent<Rigidbody>();
-            dynamics = GetComponent<VehicleDynamics>();
-            aero = GetComponent<Aerodynamics>();
-            powertrain = GetComponent<PowertrainSystem>();
-            tyreModel = GetComponent<TyreModel>();
-            brakeSystem = GetComponent<BrakeSystem>();
-            trackEnv = GetComponent<TrackEnvironmentSystem>();
-            traffic = GetComponent<OpponentTrafficSystem>();
+            EnsureInitialized();
+        }
+
+        public void EnsureInitialized()
+        {
+            if (rb == null) rb = GetComponent<Rigidbody>();
+            if (dynamics == null) dynamics = GetComponent<VehicleDynamics>();
+            if (aero == null) aero = GetComponent<Aerodynamics>();
+            if (powertrain == null) powertrain = GetComponent<PowertrainSystem>();
+            if (tyreModel == null) tyreModel = GetComponent<TyreModel>();
+            if (brakeSystem == null) brakeSystem = GetComponent<BrakeSystem>();
+            if (trackEnv == null) trackEnv = GetComponent<TrackEnvironmentSystem>();
+            if (traffic == null) traffic = GetComponent<OpponentTrafficSystem>();
 
             if (wheelFL == null || wheelFR == null || wheelRL == null || wheelRR == null)
             {
@@ -96,7 +101,11 @@ namespace GridSense.Physics
             }
 
             // Initialize default CarState values
-            carState.Compound = tyreModel.ActiveCompound;
+            if (tyreModel != null)
+                carState.Compound = tyreModel.ActiveCompound;
+            else
+                carState.Compound = TyreCompound.Medium;
+
             carState.FuelLoadKg = 100.0f; // starting race fuel (100 kg)
             carState.DeploymentMode = EnergyMode.Balanced;
             carState.Braking = BrakingAggressiveness.Normal;
@@ -121,39 +130,57 @@ namespace GridSense.Physics
         }
 
         private float _currentSteerAngle;
+        private float _tractionMultiplier = 1f;
 
         private void FixedUpdate()
         {
-            float dt = Time.fixedDeltaTime;
+            StepSimulation(Time.fixedDeltaTime);
+        }
+
+        public void StepSimulation(float dt)
+        {
+            EnsureInitialized();
             float currentSpeedMs = ForwardSpeedMs;
 
             // 1. Update Track & Environment (Section 3.6: Lap, Sector, Distance, Track Evolution Confound)
-            trackEnv.UpdateTrackStep(ref carState, transform.position, currentSpeedMs, dt);
+            if (trackEnv != null)
+            {
+                trackEnv.UpdateTrackStep(ref carState, transform.position, currentSpeedMs, dt);
+            }
 
             // 2. Update Opponent Traffic (Section 3.7: GapAhead, GapBehind)
-            float normProgress = trackEnv.ActiveTrack != null 
-                ? carState.DistanceIntoLapM / Mathf.Max(trackEnv.ActiveTrack.trackLengthMetres, 1f) 
-                : 0f;
-            traffic.UpdateTraffic(ref carState, normProgress, dt);
+            if (traffic != null)
+            {
+                float normProgress = (trackEnv != null && trackEnv.ActiveTrack != null)
+                    ? carState.DistanceIntoLapM / Mathf.Max(trackEnv.ActiveTrack.trackLengthMetres, 1f) 
+                    : 0f;
+                traffic.UpdateTraffic(ref carState, normProgress, dt);
+            }
 
             // 3. Update Vehicle Dynamics (Section 3.2: Mass from FuelLoadKg, CG, Anti-Roll Bars, Ride Heights)
-            dynamics.UpdateVehicleDynamics(ref carState, dt);
+            if (dynamics != null)
+            {
+                dynamics.UpdateVehicleDynamics(ref carState, dt);
+            }
 
             // 4. Update Aerodynamics (Section 3.3: Downforce, Drag, Ground effect, Dirty-air wake from Traffic gaps)
-            aero.UpdateAero(ref carState, currentSpeedMs, dt);
+            if (aero != null)
+            {
+                aero.UpdateAero(ref carState, currentSpeedMs, dt);
+            }
 
             // 5. Apply Steering (with speed-sensitive reduction and smooth rate limiting)
             float speedFactor = Mathf.Clamp01(Mathf.Abs(currentSpeedMs) / 75.0f); // ~270 km/h
-            float targetSteerAngle = _steerInput * Mathf.Lerp(maxSteerAngle, maxSteerAngle * 0.35f, speedFactor);
-            _currentSteerAngle = Mathf.MoveTowards(_currentSteerAngle, targetSteerAngle, 75.0f * dt);
+            float targetSteerAngle = _steerInput * Mathf.Lerp(maxSteerAngle, maxSteerAngle * 0.40f, speedFactor);
+            _currentSteerAngle = Mathf.MoveTowards(_currentSteerAngle, targetSteerAngle, 100.0f * dt);
 
             if (wheelFL != null) wheelFL.steerAngle = _currentSteerAngle;
             if (wheelFR != null) wheelFR.steerAngle = _currentSteerAngle;
 
             // 5b. F1 High-Speed Aerodynamic Lateral Grip & Heading Stability (Smoothly speed-gated)
-            if (Mathf.Abs(currentSpeedMs) > 4.0f && rb != null)
+            if (Mathf.Abs(currentSpeedMs) > 3.0f && rb != null)
             {
-                float speedFade = Mathf.Clamp01((Mathf.Abs(currentSpeedMs) - 4.0f) / 10.0f);
+                float speedFade = Mathf.Clamp01((Mathf.Abs(currentSpeedMs) - 3.0f) / 8.0f);
 
                 // Smooth lateral drift damping proportional to forward speed
                 Vector3 lateralVelocity = Vector3.Dot(rb.linearVelocity, transform.right) * transform.right;
@@ -178,7 +205,10 @@ namespace GridSense.Physics
             }
 
             // 6. Update Powertrain & Energy (Section 3.4: ICE torque, fuel burn, MGU-K deploy/regen)
-            powertrain.UpdatePowertrain(ref carState, _throttleInput, _brakeInput, currentSpeedMs, dt);
+            if (powertrain != null)
+            {
+                powertrain.UpdatePowertrain(ref carState, _throttleInput, _brakeInput, currentSpeedMs, dt);
+            }
 
             // 7. High-Performance F1 Driving, Braking & Reversing Engine
             float fwdSpeed = ForwardSpeedMs;
@@ -188,64 +218,77 @@ namespace GridSense.Physics
                 if (fwdSpeed < -0.2f)
                 {
                     // Rolling backwards: Hard friction brakes to stop reverse motion immediately
-                    brakeSystem.ApplyBraking(_throttleInput * 2.0f, carState.Braking, currentSpeedMs, tyreModel.AmbientTempC, dt);
-                    // Also deliver forward torque so the moment speed crosses 0, it pushes forward instantly!
-                    SetDriveTorque(powertrain.TotalDriveTorqueNm * _throttleInput);
+                    if (brakeSystem != null)
+                        brakeSystem.ApplyBraking(_throttleInput * 2.0f, carState.Braking, currentSpeedMs, tyreModel != null ? tyreModel.AmbientTempC : 28f, dt);
+                    if (powertrain != null)
+                        SetDriveTorque(powertrain.TotalDriveTorqueNm * _throttleInput);
                 }
                 else
                 {
                     // Driving forward: release brakes and deliver full powertrain torque
-                    brakeSystem.ReleaseBrakes(currentSpeedMs, tyreModel.AmbientTempC, dt);
-                    SetDriveTorque(powertrain.TotalDriveTorqueNm * _throttleInput);
+                    if (brakeSystem != null)
+                        brakeSystem.ReleaseBrakes(currentSpeedMs, tyreModel != null ? tyreModel.AmbientTempC : 28f, dt);
+                    if (powertrain != null)
+                        SetDriveTorque(powertrain.TotalDriveTorqueNm * _throttleInput);
                 }
             }
             else if (_brakeInput > 0.01f)
             {
-                if (fwdSpeed > 0.2f)
+                if (fwdSpeed > 0.3f)
                 {
-                    // Moving forward: Apply full carbon-carbon disc braking
-                    brakeSystem.ApplyBraking(_brakeInput * 1.5f, carState.Braking, currentSpeedMs, tyreModel.AmbientTempC, dt);
+                    // Moving forward: Apply high-downforce carbon-carbon friction braking
                     SetDriveTorque(0f);
+                    if (brakeSystem != null)
+                        brakeSystem.ApplyBraking(_brakeInput, carState.Braking, currentSpeedMs, tyreModel != null ? tyreModel.AmbientTempC : 28f, dt);
                 }
                 else
                 {
-                    // Stationary or reversing: release brakes and deliver smooth reverse torque
-                    brakeSystem.ReleaseBrakes(currentSpeedMs, tyreModel.AmbientTempC, dt);
+                    // Stationary or reversing: deliver smooth electric reverse torque
+                    if (brakeSystem != null)
+                        brakeSystem.ReleaseBrakes(currentSpeedMs, tyreModel != null ? tyreModel.AmbientTempC : 28f, dt);
                     SetDriveTorque(-_brakeInput * 3500f);
                 }
             }
             else
             {
-                // Coasting: release brakes, zero drive torque
-                brakeSystem.ReleaseBrakes(currentSpeedMs, tyreModel.AmbientTempC, dt);
+                // Coasting with engine drag
+                if (brakeSystem != null)
+                    brakeSystem.ReleaseBrakes(currentSpeedMs, tyreModel != null ? tyreModel.AmbientTempC : 28f, dt);
                 SetDriveTorque(0f);
             }
 
-            // 8. Update Tyre Model (Section 3.1: Pacejka, Thermodynamics, Slip-energy wear, Track Evolution Confound)
-            tyreModel.UpdatePhysicsStep(dt, currentSpeedMs, carState.TrackEvolutionFactor);
+            // 8. Update Tyre Model (Section 3.1: Pacejka forces, temperature, wear, WheelCollider sync)
+            if (tyreModel != null)
+            {
+                tyreModel.UpdatePhysicsStep(dt, currentSpeedMs, carState.TrackEvolutionFactor);
+                tyreModel.WriteToCarState(ref carState);
+            }
 
-            // 9. Write telemetry into shared CarState contract
-            tyreModel.WriteToCarState(ref carState);
-            brakeSystem.WriteToCarState(ref carState);
+            // 9. Write Brake telemetry into CarState
+            if (brakeSystem != null)
+            {
+                brakeSystem.WriteToCarState(ref carState);
+            }
         }
 
         private void SetDriveTorque(float torquePerAxle)
         {
             // Traction Control System (TCS): prevents wheelspin from breaking traction
-            float tcsMultiplier = 1.0f;
+            float targetTractionMultiplier = 1.0f;
             if (torquePerAxle > 0.01f && wheelRL != null && wheelRR != null)
             {
-                float rearRpm = (wheelRL.rpm + wheelRR.rpm) * 0.5f;
-                float rearWheelSpeed = rearRpm * (Mathf.PI / 30f) * 0.36f;
-                float carSpeed = Mathf.Max(0.5f, ForwardSpeedMs);
-                float slipSpeed = rearWheelSpeed - carSpeed;
-                if (slipSpeed > 2.0f)
-                {
-                    tcsMultiplier = Mathf.Clamp01(1.0f - ((slipSpeed - 2.0f) / 4.0f));
-                }
+                float slip = 0f;
+                int grounded = 0;
+                if (wheelRL.GetGroundHit(out WheelHit leftHit)) { slip += Mathf.Abs(leftHit.forwardSlip); grounded++; }
+                if (wheelRR.GetGroundHit(out WheelHit rightHit)) { slip += Mathf.Abs(rightHit.forwardSlip); grounded++; }
+                if (grounded > 0)
+                    targetTractionMultiplier = Mathf.Lerp(1f, 0.35f, Mathf.InverseLerp(0.20f, 0.75f, slip / grounded));
             }
 
-            float torquePerWheel = (torquePerAxle * tcsMultiplier) * 0.5f;
+            // A rate-limited controller avoids the old on/off wheelspin cycle.
+            _tractionMultiplier = Mathf.MoveTowards(_tractionMultiplier, targetTractionMultiplier, Time.fixedDeltaTime * 5f);
+
+            float torquePerWheel = (torquePerAxle * _tractionMultiplier) * 0.5f;
             if (wheelRL != null) wheelRL.motorTorque = torquePerWheel;
             if (wheelRR != null) wheelRR.motorTorque = torquePerWheel;
         }

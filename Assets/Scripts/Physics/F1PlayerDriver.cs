@@ -36,6 +36,8 @@ namespace GridSense.Simulation
         private UIDocument _dashboardDoc;
         private string _logPath;
         private float _lastLogTime;
+        private float _airborneSince = -1f;
+        private bool _hasSnappedOnStart = false;
 
         public bool IsAutopilotEnabled => aiAutopilotEnabled;
 
@@ -52,12 +54,48 @@ namespace GridSense.Simulation
             {
                 File.WriteAllText(_logPath, $"=== GRIDSENSE RUNTIME INPUT LOG INITIALIZED: {DateTime.Now} ===\nMode: Manual WASD Driving Default\n");
             }
-            catch {}
+            catch (Exception ex)
+            {
+                Debug.LogWarning($"[F1PlayerDriver] Could not init log file: {ex.Message}");
+            }
         }
 
         private void Start()
         {
             _dashboardDoc = FindAnyObjectByType<UIDocument>();
+
+            // Snap to track surface on first load so the car doesn't spawn in mid-air
+            // or below the track.  Also fixes the backward-facing rotation if detected.
+            SnapToTrackSurface();
+            _hasSnappedOnStart = true;
+        }
+
+        private void FixedUpdate()
+        {
+            if (_rb == null) return;
+
+            // Check if any wheel is grounded
+            bool grounded = false;
+            foreach (var wheel in GetComponentsInChildren<WheelCollider>())
+                grounded |= wheel.isGrounded;
+
+            if (grounded)
+                _airborneSince = -1f;
+            else if (_airborneSince < 0f)
+                _airborneSince = Time.time;
+
+            // Abyss detection: raycast downward to find ground
+            bool hasGroundBelow = UnityEngine.Physics.Raycast(
+                transform.position, Vector3.down, 20f);
+
+            // Reset conditions:
+            // 1. No ground within 20m below the car (drove off edge / gap in colliders)
+            // 2. Airborne for >1.5s and falling fast (launched off track or flipped)
+            if (!hasGroundBelow ||
+                (_airborneSince > 0f && Time.time - _airborneSince > 1.5f && _rb.linearVelocity.y < -5f))
+            {
+                ResetCar();
+            }
         }
 
         private bool IsPressed(
@@ -69,11 +107,9 @@ namespace GridSense.Simulation
 #if ENABLE_INPUT_SYSTEM
             if (Keyboard.current != null && Keyboard.current[newKey].isPressed) return true;
 #endif
-            try
-            {
-                if (Input.GetKey(legacyKey)) return true;
-            }
-            catch {}
+            // No try/catch — if legacy input throws, we need to know about it.
+            // activeInputHandler: 2 means both systems are enabled.
+            if (Input.GetKey(legacyKey)) return true;
             return false;
         }
 
@@ -86,11 +122,7 @@ namespace GridSense.Simulation
 #if ENABLE_INPUT_SYSTEM
             if (Keyboard.current != null && Keyboard.current[newKey].wasPressedThisFrame) return true;
 #endif
-            try
-            {
-                if (Input.GetKeyDown(legacyKey)) return true;
-            }
-            catch {}
+            if (Input.GetKeyDown(legacyKey)) return true;
             return false;
         }
 
@@ -182,80 +214,7 @@ namespace GridSense.Simulation
 
             if (aiAutopilotEnabled)
             {
-                // Intelligent Autonomous AI Autopilot: Multi-Ray Corridor Navigation & Corner Speed Governor
-                Vector3 origin = transform.position + (transform.up * 0.6f) + (transform.forward * 2.0f);
-                
-                float maxRayDist = 60.0f;
-                float dCenter = maxRayDist;
-                float dLeft15 = maxRayDist;
-                float dRight15 = maxRayDist;
-                float dLeft45 = 30.0f;
-                float dRight45 = 30.0f;
-
-                RaycastHit hit;
-                if (UnityEngine.Physics.Raycast(origin, transform.forward, out hit, maxRayDist))
-                    dCenter = hit.distance;
-
-                Vector3 dirL15 = Quaternion.Euler(0f, -18f, 0f) * transform.forward;
-                if (UnityEngine.Physics.Raycast(origin, dirL15, out hit, maxRayDist))
-                    dLeft15 = hit.distance;
-
-                Vector3 dirR15 = Quaternion.Euler(0f, 18f, 0f) * transform.forward;
-                if (UnityEngine.Physics.Raycast(origin, dirR15, out hit, maxRayDist))
-                    dRight15 = hit.distance;
-
-                Vector3 dirL45 = Quaternion.Euler(0f, -50f, 0f) * transform.forward;
-                if (UnityEngine.Physics.Raycast(origin, dirL45, out hit, 30.0f))
-                    dLeft45 = hit.distance;
-
-                Vector3 dirR45 = Quaternion.Euler(0f, 50f, 0f) * transform.forward;
-                if (UnityEngine.Physics.Raycast(origin, dirR45, out hit, 30.0f))
-                    dRight45 = hit.distance;
-
-                // 2. Track Centering Steering (PD control)
-                float corridorError = (dLeft15 + dLeft45 * 0.6f) - (dRight15 + dRight45 * 0.6f);
-                float desiredSteer = Mathf.Clamp(-corridorError * 0.07f, -1.0f, 1.0f);
-
-                // Barrier repulsion
-                if (dLeft45 < 4.5f) desiredSteer = Mathf.Max(desiredSteer, 0.45f);
-                if (dRight45 < 4.5f) desiredSteer = Mathf.Min(desiredSteer, -0.45f);
-
-                steer = desiredSteer;
-
-                // 3. Dynamic Corner Speed Governor
-                float forwardClearance = Mathf.Min(dCenter, Mathf.Min(dLeft15, dRight15));
-                float targetSpeedKmh;
-
-                if (forwardClearance > 35.0f && Mathf.Abs(steer) < 0.2f)
-                {
-                    // Straightaway: full throttle + DRS
-                    targetSpeedKmh = 270.0f;
-                    drs = true;
-                }
-                else if (forwardClearance > 22.0f)
-                {
-                    // Medium sweep / turn entry
-                    targetSpeedKmh = 160.0f;
-                    drs = false;
-                }
-                else
-                {
-                    // Sharp turn / chicane: heavy braking
-                    targetSpeedKmh = 100.0f;
-                    drs = false;
-                }
-
-                float currentSpeed = _vehicle.SpeedKmh;
-                if (currentSpeed < targetSpeedKmh)
-                {
-                    throttle = Mathf.Clamp01((targetSpeedKmh - currentSpeed) / 25.0f);
-                    brake = 0f;
-                }
-                else
-                {
-                    throttle = 0f;
-                    brake = Mathf.Clamp01((currentSpeed - targetSpeedKmh) / 15.0f);
-                }
+                ComputeAutopilotInputs(out throttle, out steer, out brake, out drs);
             }
             else
             {
@@ -327,16 +286,158 @@ namespace GridSense.Simulation
             _vehicle.SetDrs(drs);
         }
 
-        private void ResetCar()
+        /// <summary>
+        /// Improved autopilot with longer ray distances, lower steering gain,
+        /// and downward edge detection to prevent driving off track edges.
+        /// </summary>
+        private void ComputeAutopilotInputs(out float throttle, out float steer, out float brake, out bool drs)
         {
-            if (_rb != null)
+            Vector3 origin = transform.position + (transform.up * 0.6f) + (transform.forward * 2.0f);
+            
+            float maxRayDist = 80.0f;
+            float dCenter = maxRayDist;
+            float dLeft15 = maxRayDist;
+            float dRight15 = maxRayDist;
+            float dLeft45 = 50.0f;
+            float dRight45 = 50.0f;
+
+            RaycastHit hit;
+            if (UnityEngine.Physics.Raycast(origin, transform.forward, out hit, maxRayDist))
+                dCenter = hit.distance;
+
+            Vector3 dirL15 = Quaternion.Euler(0f, -18f, 0f) * transform.forward;
+            if (UnityEngine.Physics.Raycast(origin, dirL15, out hit, maxRayDist))
+                dLeft15 = hit.distance;
+
+            Vector3 dirR15 = Quaternion.Euler(0f, 18f, 0f) * transform.forward;
+            if (UnityEngine.Physics.Raycast(origin, dirR15, out hit, maxRayDist))
+                dRight15 = hit.distance;
+
+            Vector3 dirL45 = Quaternion.Euler(0f, -50f, 0f) * transform.forward;
+            if (UnityEngine.Physics.Raycast(origin, dirL45, out hit, 50.0f))
+                dLeft45 = hit.distance;
+
+            Vector3 dirR45 = Quaternion.Euler(0f, 50f, 0f) * transform.forward;
+            if (UnityEngine.Physics.Raycast(origin, dirR45, out hit, 50.0f))
+                dRight45 = hit.distance;
+
+            // Downward ground probe: detect track drop-offs / edges ahead
+            Vector3 groundProbePos = origin + transform.forward * 12.0f;
+            bool hasGroundAhead = UnityEngine.Physics.Raycast(groundProbePos, Vector3.down, 15.0f);
+
+            // Track Centering Steering (reduced gain to prevent overcorrection)
+            float corridorError = (dLeft15 + dLeft45 * 0.6f) - (dRight15 + dRight45 * 0.6f);
+            float desiredSteer = Mathf.Clamp(-corridorError * 0.04f, -1.0f, 1.0f);
+
+            // Barrier repulsion
+            if (dLeft45 < 5.0f) desiredSteer = Mathf.Max(desiredSteer, 0.4f);
+            if (dRight45 < 5.0f) desiredSteer = Mathf.Min(desiredSteer, -0.4f);
+
+            steer = desiredSteer;
+
+            // Dynamic Corner Speed Governor
+            float forwardClearance = Mathf.Min(dCenter, Mathf.Min(dLeft15, dRight15));
+            float targetSpeedKmh;
+
+            // If no ground ahead, emergency brake
+            if (!hasGroundAhead)
             {
+                targetSpeedKmh = 30.0f;
+                drs = false;
+            }
+            else if (forwardClearance > 50.0f && Mathf.Abs(steer) < 0.15f)
+            {
+                // Straightaway: full throttle + DRS — NO artificial speed cap
+                targetSpeedKmh = autopilotTargetSpeedKmh;
+                drs = true;
+            }
+            else if (forwardClearance > 30.0f)
+            {
+                // Medium sweep / turn entry
+                targetSpeedKmh = 120.0f;
+                drs = false;
+            }
+            else
+            {
+                // Sharp turn / chicane
+                targetSpeedKmh = 70.0f;
+                drs = false;
+            }
+
+            float currentSpeed = _vehicle.SpeedKmh;
+            if (currentSpeed < targetSpeedKmh)
+            {
+                throttle = Mathf.Clamp01((targetSpeedKmh - currentSpeed) / 30.0f);
+                brake = 0f;
+            }
+            else
+            {
+                throttle = 0f;
+                brake = Mathf.Clamp01((currentSpeed - targetSpeedKmh) / 20.0f);
+            }
+        }
+
+        /// <summary>
+        /// Snaps the car to the actual track surface by raycasting downward.
+        /// Prevents spawning in mid-air or below the track.
+        /// Also validates that the car faces roughly forward along the track
+        /// by checking which direction has more open space ahead.
+        /// </summary>
+        private void SnapToTrackSurface()
+        {
+            if (_rb == null) return;
+
+            // Raycast down from well above the spawn position to find the actual track surface
+            Vector3 probeOrigin = spawnPosition + Vector3.up * 50f;
+            if (UnityEngine.Physics.Raycast(probeOrigin, Vector3.down, out RaycastHit hit, 200f))
+            {
+                Vector3 surfacePos = hit.point + Vector3.up * 0.5f;
+                _rb.position = surfacePos;
+                spawnPosition = surfacePos; // update so future resets use corrected position
+
+                // Check if car is facing backward by probing forward clearance
+                // in both the current facing direction and 180° opposite
+                Vector3 fwd = spawnRotation * Vector3.forward;
+                float fwdClearance = 0f;
+                float revClearance = 0f;
+
+                Vector3 probePos = surfacePos + Vector3.up * 0.5f;
+                if (UnityEngine.Physics.Raycast(probePos, fwd, out RaycastHit fwdHit, 100f))
+                    fwdClearance = fwdHit.distance;
+                else
+                    fwdClearance = 100f;
+
+                if (UnityEngine.Physics.Raycast(probePos, -fwd, out RaycastHit revHit, 100f))
+                    revClearance = revHit.distance;
+                else
+                    revClearance = 100f;
+
+                // If the reverse direction has significantly more clearance, the car is facing backward
+                if (revClearance > fwdClearance * 1.5f)
+                {
+                    spawnRotation = Quaternion.LookRotation(-fwd, Vector3.up);
+                    Debug.Log($"[F1PlayerDriver] Detected backward-facing car. Flipped rotation. fwdClear={fwdClearance:F1}m, revClear={revClearance:F1}m");
+                }
+
+                _rb.rotation = spawnRotation;
                 _rb.linearVelocity = Vector3.zero;
                 _rb.angularVelocity = Vector3.zero;
+
+                Debug.Log($"[F1PlayerDriver] Snapped to track surface at {surfacePos} (surface hit at {hit.point})");
             }
-            transform.position = spawnPosition;
-            transform.rotation = spawnRotation;
-            string msg = "[F1PlayerDriver] Reset car to start line.";
+            else
+            {
+                Debug.LogWarning("[F1PlayerDriver] SnapToTrackSurface: No ground found below spawn position!");
+                _rb.position = spawnPosition;
+                _rb.rotation = spawnRotation;
+            }
+        }
+
+        private void ResetCar()
+        {
+            _airborneSince = -1f;
+            SnapToTrackSurface();
+            string msg = "[F1PlayerDriver] Reset car to track surface.";
             Debug.Log(msg);
             LogToFile(msg);
         }
@@ -358,7 +459,10 @@ namespace GridSense.Simulation
                     File.AppendAllText(_logPath, $"{DateTime.Now:HH:mm:ss.fff} {line}\n");
                 }
             }
-            catch {}
+            catch (Exception ex)
+            {
+                Debug.LogWarning($"[F1PlayerDriver] Log write failed: {ex.Message}");
+            }
         }
     }
 }

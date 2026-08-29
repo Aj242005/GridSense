@@ -269,25 +269,30 @@ namespace GridSense.Physics
 
         private void UpdateWheelColliderFriction(WheelCollider wc, float effectiveMu, float speedMs)
         {
-            float normGrip = Mathf.Clamp(effectiveMu / 1.65f, 0.8f, 1.25f);
-            float speedFactor = Mathf.Clamp01(Mathf.Abs(speedMs) / 3.5f);
+            // Normalize grip relative to baseline medium compound (1.66).
+            // Clamp tightly so friction curve stays within WheelCollider's stable range.
+            float normGrip = Mathf.Clamp(effectiveMu / 1.66f, 0.85f, 1.15f);
 
-            // Forward friction curve (smooth at stationary, high bite at speed)
+            // Wide speed transition band (0-15 m/s) prevents the stiffness oscillation
+            // that was causing the car to lurch/slip at low speed.
+            float speedFactor = Mathf.Clamp01(Mathf.Abs(speedMs) / 15.0f);
+
+            // Forward friction curve — values in the 1.0-1.5 range where WheelCollider is stable
             WheelFrictionCurve forwardCurve = wc.forwardFriction;
-            forwardCurve.extremumSlip = 0.15f;
-            forwardCurve.extremumValue = 2.2f * normGrip;
-            forwardCurve.asymptoteSlip = 0.50f;
-            forwardCurve.asymptoteValue = 1.6f * normGrip;
-            forwardCurve.stiffness = Mathf.Lerp(1.2f, 2.2f * normGrip, speedFactor);
+            forwardCurve.extremumSlip = 0.20f;
+            forwardCurve.extremumValue = 1.4f * normGrip;
+            forwardCurve.asymptoteSlip = 0.80f;
+            forwardCurve.asymptoteValue = 1.0f * normGrip;
+            forwardCurve.stiffness = Mathf.Lerp(0.8f, 1.0f * normGrip, speedFactor);
             wc.forwardFriction = forwardCurve;
 
-            // Sideways cornering curve (smooth at stationary, crisp racing grip at speed)
+            // Sideways cornering curve
             WheelFrictionCurve sidewaysCurve = wc.sidewaysFriction;
-            sidewaysCurve.extremumSlip = 0.12f;
-            sidewaysCurve.extremumValue = 2.6f * normGrip;
-            sidewaysCurve.asymptoteSlip = 0.40f;
-            sidewaysCurve.asymptoteValue = 1.9f * normGrip;
-            sidewaysCurve.stiffness = Mathf.Lerp(1.2f, 2.5f * normGrip, speedFactor);
+            sidewaysCurve.extremumSlip = 0.15f;
+            sidewaysCurve.extremumValue = 1.5f * normGrip;
+            sidewaysCurve.asymptoteSlip = 0.60f;
+            sidewaysCurve.asymptoteValue = 1.1f * normGrip;
+            sidewaysCurve.stiffness = Mathf.Lerp(0.8f, 1.0f * normGrip, speedFactor);
             wc.sidewaysFriction = sidewaysCurve;
         }
 

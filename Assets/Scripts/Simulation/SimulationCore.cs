@@ -133,9 +133,11 @@ namespace GridSense.Simulation
             }
             else if (_useFallbackWearEstimator)
             {
-                // Baseline heuristic estimator until Section 4 Sentis model is hooked up:
-                // Integrates wear rate over time to populate CarState.TyreWearPct
-                _fallbackEstimatedWearPct = Mathf.Clamp(_fallbackEstimatedWearPct + (currentState.TyreWearRateCurrent * dt), 0f, 100f);
+                // Baseline heuristic estimator until Section 4 Sentis model is hooked up.
+                // Uses a minimum wear rate so the dashboard shows meaningful, changing values
+                // rather than sitting at 0% indefinitely.
+                float wearRate = Mathf.Max(currentState.TyreWearRateCurrent, 0.08f); // ~4.8%/minute minimum
+                _fallbackEstimatedWearPct = Mathf.Clamp(_fallbackEstimatedWearPct + (wearRate * dt), 0f, 100f);
                 currentState.TyreWearPct = _fallbackEstimatedWearPct;
             }
 

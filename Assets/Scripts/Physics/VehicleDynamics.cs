@@ -36,21 +36,21 @@ namespace GridSense.Physics
         [SerializeField] private float staticRideHeightM = 0.045f;
 
         [Header("Suspension Parameters (WheelColliders)")]
-        [Tooltip("Suspension spring rate in N/m (F1 is very stiff, ~140,000 N/m)")]
-        [SerializeField] private float springRateNm = 145000f;
+        [Tooltip("Suspension spring rate in N/m (tuned for WheelCollider stability with 80mm travel)")]
+        [SerializeField] private float springRateNm = 35000f;
 
-        [Tooltip("Suspension damper rate in N*s/m (~14,000 N*s/m)")]
-        [SerializeField] private float damperRateNsm = 14500f;
+        [Tooltip("Suspension damper rate in N*s/m (tuned to prevent oscillation)")]
+        [SerializeField] private float damperRateNsm = 4500f;
 
-        [Tooltip("Total suspension travel in metres (~0.05m = 50mm)")]
-        [SerializeField] private float suspensionDistanceM = 0.050f;
+        [Tooltip("Total suspension travel in metres (~0.08m = 80mm for stable ground contact)")]
+        [SerializeField] private float suspensionDistanceM = 0.080f;
 
         [Header("Anti-Roll Bars (ARB)")]
         [Tooltip("Front Anti-Roll Bar stiffness (N)")]
-        [SerializeField] private float frontArbStiffness = 12000f;
+        [SerializeField] private float frontArbStiffness = 6000f;
 
         [Tooltip("Rear Anti-Roll Bar stiffness (N)")]
-        [SerializeField] private float rearArbStiffness = 8500f;
+        [SerializeField] private float rearArbStiffness = 4000f;
 
         [Header("Wheel Colliders")]
         [SerializeField] private WheelCollider wheelFL;
@@ -98,35 +98,24 @@ namespace GridSense.Physics
         {
             if (rb == null) rb = GetComponent<Rigidbody>();
 
-            // Ultra-low center of gravity to prevent rollovers and spins
-            rb.centerOfMass = new Vector3(0f, -0.35f, 0.05f);
+            rb.centerOfMass = centerOfMassOffset;
             rb.interpolation = RigidbodyInterpolation.Interpolate;
             rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
-            rb.angularDamping = 3.5f;
-            rb.linearDamping = 0.02f;
+            rb.angularDamping = 0.5f;
+            rb.linearDamping = 0.01f;
 
-            // Streamlined, high-clearance cockpit-only BoxCollider (completely immune to ground/kerb snagging)
+            // Thin bodywork-only BoxCollider positioned just above wheel height
+            // to avoid snagging on track geometry or kerbs
             var box = GetComponent<BoxCollider>();
             if (box != null)
             {
-                box.center = new Vector3(0f, 0.88f, 0f);
-                box.size = new Vector3(1.0f, 0.28f, 2.2f);
-
-                PhysicsMaterial noSnagMat = new PhysicsMaterial("F1_Chassis_NoSnag")
-                {
-                    dynamicFriction = 0f,
-                    staticFriction = 0f,
-                    bounciness = 0f,
-                    frictionCombine = PhysicsMaterialCombine.Minimum,
-                    bounceCombine = PhysicsMaterialCombine.Minimum
-                };
-                box.sharedMaterial = noSnagMat;
+                box.center = new Vector3(0f, 0.55f, 0f);
+                box.size = new Vector3(0.8f, 0.2f, 2.0f);
             }
 
-            // High-precision PhysX contact solver settings
-            UnityEngine.Physics.defaultSolverIterations = 16;
-            UnityEngine.Physics.defaultSolverVelocityIterations = 12;
-            UnityEngine.Physics.defaultContactOffset = 0.005f;
+            // NOTE: Do NOT mutate global Physics settings from a per-car component.
+            // Project-level solver iterations and contact offset belong in
+            // ProjectSettings/DynamicsManager, not in per-object code.
 
             ConfigureWheelSuspension(wheelFL);
             ConfigureWheelSuspension(wheelFR);
@@ -138,29 +127,31 @@ namespace GridSense.Physics
         {
             if (wc == null) return;
 
-            wc.suspensionDistance = 0.09f;
-            wc.forceAppPointDistance = 0.10f; // Low force application point eliminates torque jitter
+            wc.suspensionDistance = suspensionDistanceM;
+            wc.forceAppPointDistance = 0.0f; // At wheel centre — most stable config
 
             JointSpring spring = wc.suspensionSpring;
-            spring.spring = 50000f; // Smooth spring prevents high-frequency limit cycle vibration
-            spring.damper = 5000f;  // Critically damped
+            spring.spring = springRateNm;
+            spring.damper = damperRateNsm;
             spring.targetPosition = 0.5f;
             wc.suspensionSpring = spring;
 
+            // Sane friction curves: extremumValue ~1.2-1.5 is the realistic WheelCollider range.
+            // Higher values cause violent grip spikes and jitter.
             WheelFrictionCurve fFriction = wc.forwardFriction;
-            fFriction.extremumSlip = 0.15f;
-            fFriction.extremumValue = 2.2f;
-            fFriction.asymptoteSlip = 0.50f;
-            fFriction.asymptoteValue = 1.6f;
-            fFriction.stiffness = 2.2f;
+            fFriction.extremumSlip = 0.20f;
+            fFriction.extremumValue = 1.4f;
+            fFriction.asymptoteSlip = 0.80f;
+            fFriction.asymptoteValue = 1.0f;
+            fFriction.stiffness = 1.0f;
             wc.forwardFriction = fFriction;
 
             WheelFrictionCurve sFriction = wc.sidewaysFriction;
-            sFriction.extremumSlip = 0.12f;
-            sFriction.extremumValue = 2.6f;
-            sFriction.asymptoteSlip = 0.40f;
-            sFriction.asymptoteValue = 1.9f;
-            sFriction.stiffness = 2.5f;
+            sFriction.extremumSlip = 0.15f;
+            sFriction.extremumValue = 1.5f;
+            sFriction.asymptoteSlip = 0.60f;
+            sFriction.asymptoteValue = 1.1f;
+            sFriction.stiffness = 1.0f;
             wc.sidewaysFriction = sFriction;
         }
 
@@ -222,7 +213,7 @@ namespace GridSense.Physics
             }
 
             // Clamped ARB force to prevent abrupt physics impulse spikes
-            float arbForce = Mathf.Clamp((travelL - travelR) * arbStiffness, -4000f, 4000f);
+            float arbForce = Mathf.Clamp((travelL - travelR) * arbStiffness, -2000f, 2000f);
 
             if (groundedL)
                 rb.AddForceAtPosition(leftWheel.transform.up * -arbForce, leftWheel.transform.position);

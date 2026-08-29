@@ -188,7 +188,7 @@ namespace GridSense.UI
             if (vehicle == null) return;
 
             // 0. Energy & Deployment Telemetry (Section 5 Sentis PPO Policy)
-            float socPct = vehicle.State.EnergyRemainingPct > 0.001f ? vehicle.State.EnergyRemainingPct : 85.0f;
+            float socPct = Mathf.Clamp(vehicle.State.EnergyRemainingPct, 0f, 100f);
             if (_energySocLabel != null) _energySocLabel.text = $"{socPct:F1}%";
             if (_energyProgressBar != null) _energyProgressBar.style.width = Length.Percent(Mathf.Clamp01(socPct / 100f) * 100f);
             
@@ -202,19 +202,27 @@ namespace GridSense.UI
             if (_deployBudgetLabel != null) _deployBudgetLabel.text = $"Lap Deploy: {lapDeployMj:F2} MJ / 4.00 MJ";
             if (_deployProgressBar != null) _deployProgressBar.style.width = Length.Percent(Mathf.Clamp01(lapDeployMj / 4.0f) * 100f);
 
-            if (_tacticalScoreLabel != null) _tacticalScoreLabel.text = $"REWARD: +{94.2f - (vehicle.State.TyreWearPct * 0.15f):F1}";
+            if (_tacticalScoreLabel != null) { var energyModel = vehicle.GetComponent<SentisEnergyDeploymentModel>(); _tacticalScoreLabel.text = energyModel != null && energyModel.IsInitialized ? $"POLICY SCORE: {energyModel.RiskRewardScore:+0.00;-0.00;0.00}" : "POLICY SCORE: MODEL OFFLINE"; }
             if (_tacticalDirectiveLabel != null)
             {
-                _tacticalDirectiveLabel.text = (dep == EnergyMode.Push)
-                    ? "PPO DIRECTIVE: Full MGU-K boost deployed down straight"
-                    : (dep == EnergyMode.Save)
-                        ? "PPO DIRECTIVE: Lift-and-coast energy harvest active"
-                        : "PPO DIRECTIVE: Balanced energy deployment & thermal conservation";
+                var energyModel = vehicle.GetComponent<SentisEnergyDeploymentModel>();
+                if (energyModel != null && energyModel.IsInitialized)
+                {
+                    _tacticalDirectiveLabel.text = energyModel.TacticalExplanation;
+                }
+                else
+                {
+                    _tacticalDirectiveLabel.text = (dep == EnergyMode.Push)
+                        ? "FALLBACK: Full MGU-K boost deployed down straight"
+                        : (dep == EnergyMode.Save)
+                            ? "FALLBACK: Lift-and-coast energy harvest active"
+                            : "FALLBACK: Balanced energy deployment & thermal conservation";
+                }
             }
 
             // 1. AI Model Telemetry
             float aiWear = vehicle.State.TyreWearPct;
-            float paceDelta = sentisModel != null ? sentisModel.LastPredictedPaceDeltaSec : 0.25f;
+            float paceDelta = sentisModel != null && sentisModel.IsInitialized ? sentisModel.LastPredictedPaceDeltaSec : 0f;
 
             if (_aiWearLabel != null) _aiWearLabel.text = $"{aiWear:F1}%";
             if (_aiPaceDeltaLabel != null) _aiPaceDeltaLabel.text = $"Isolated Pace Delta: +{paceDelta:F2}s";
@@ -232,7 +240,7 @@ namespace GridSense.UI
                 float frW = vehicle.TyreModel.GetTrueWearPct(1);
                 float rlW = vehicle.TyreModel.GetTrueWearPct(2);
                 float rrW = vehicle.TyreModel.GetTrueWearPct(3);
-                float tTemp = (vehicle.State.TyreTempC > 10f) ? vehicle.State.TyreTempC : 95f;
+                float tTemp = vehicle.State.TyreTempC;
 
                 if (_cornerFLLabel != null) _cornerFLLabel.text = $"FL: {flW:F0}% | {tTemp:F0}°C";
                 if (_cornerFRLabel != null) _cornerFRLabel.text = $"FR: {frW:F0}% | {tTemp:F0}°C";
@@ -244,8 +252,22 @@ namespace GridSense.UI
             float residual = Mathf.Abs(aiWear - physWear);
             if (_residualLabel != null)
             {
-                _residualLabel.text = $"Δ {residual:F1}% [CONVERGED]";
-                _residualLabel.style.color = (residual < 5f) ? new Color(0.02f, 0.84f, 0.63f) : new Color(1f, 0.72f, 0.01f);
+                // Only show CONVERGED when both sensors are actually producing data
+                bool bothActive = aiWear > 0.01f || physWear > 0.01f;
+                string convergenceStatus;
+                if (!bothActive)
+                    convergenceStatus = "AWAITING DATA";
+                else if (residual < 5f)
+                    convergenceStatus = "CONVERGED";
+                else
+                    convergenceStatus = "DIVERGING";
+
+                _residualLabel.text = $"Δ {residual:F1}% [{convergenceStatus}]";
+                _residualLabel.style.color = (!bothActive)
+                    ? new Color(0.6f, 0.6f, 0.6f)
+                    : (residual < 5f)
+                        ? new Color(0.02f, 0.84f, 0.63f)
+                        : new Color(1f, 0.72f, 0.01f);
             }
             if (_residualProgressBar != null)
             {
@@ -253,10 +275,17 @@ namespace GridSense.UI
             }
 
             // 4. Latency
-            if (_latencyLabel != null && sentisModel != null)
+            if (_latencyLabel != null)
             {
-                float us = sentisModel.LastInferenceTimeMicroseconds;
-                _latencyLabel.text = $"Sentis: {us:F0} µs";
+                if (sentisModel != null && sentisModel.IsInitialized)
+                {
+                    float us = sentisModel.LastInferenceTimeMicroseconds;
+                    _latencyLabel.text = $"Sentis: {us:F0} µs";
+                }
+                else
+                {
+                    _latencyLabel.text = "Sentis: MODEL OFFLINE";
+                }
             }
 
             // 5. Real-Time Attributions & Live Gauges
@@ -288,7 +317,7 @@ namespace GridSense.UI
             float trackEvoSec = -(vehicle.State.TrackEvolutionFactor - 0.90f) * 2.8f;
             if (_attrTrackEvo != null) _attrTrackEvo.text = $"{trackEvoSec:F2}s";
 
-            float tyreTemp = (vehicle.State.TyreTempC > 10f) ? vehicle.State.TyreTempC : 95.0f;
+            float tyreTemp = vehicle.State.TyreTempC;
             if (_attrTrackTemp != null) _attrTrackTemp.text = $"{tyreTemp:F0}°C ({(tyreTemp >= 90f && tyreTemp <= 110f ? "Opt" : (tyreTemp < 90f ? "Cold" : "Hot"))})";
 
             if (_attrTyreDeg != null) _attrTyreDeg.text = $"+{paceDelta:F2}s";
