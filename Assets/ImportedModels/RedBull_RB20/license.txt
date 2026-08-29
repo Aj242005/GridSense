@@ -1,0 +1,11 @@
+Model Information:
+* title:	2024 Redbull RB20
+* source:	https://sketchfab.com/3d-models/2024-redbull-rb20-4315ff70ec694ef0b7ebfb84145ef48c
+* author:	Dave Bored SketchFab (https://sketchfab.com/Tyler_Dave)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "2024 Redbull RB20" (https://sketchfab.com/3d-models/2024-redbull-rb20-4315ff70ec694ef0b7ebfb84145ef48c) by Dave Bored SketchFab (https://sketchfab.com/Tyler_Dave) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
