@@ -1,0 +1,651 @@
+{
+  "Description": "Real race-day holdout stints with isolated EBM degradation predictions and error bands",
+  "Stints": [
+    {
+      "StintId": "Bahrain_ALO_M",
+      "Title": "2023 Bahrain GP - Alonso Stint 2 (Medium)",
+      "Circuit": "Bahrain",
+      "Driver": "ALO",
+      "Compound": "MEDIUM",
+      "TotalLaps": 18,
+      "Laps": [
+        {
+          "LapInStint": 2,
+          "RawLapTimeSec": 97.542,
+          "ObservedPaceDeltaSec": 0.7760999999999996,
+          "PredictedIsolatedDeltaSec": 0.2137085257736332,
+          "LowerErrorBoundSec": -0.38149438064439734,
+          "UpperErrorBoundSec": 0.8089114321916637,
+          "ErrorBandWidthSec": 1.190405812836061,
+          "FuelRemainingKg": 76.2,
+          "GapAheadSec": 0.6960000000008222
+        },
+        {
+          "LapInStint": 3,
+          "RawLapTimeSec": 98.139,
+          "ObservedPaceDeltaSec": 1.3730999999999938,
+          "PredictedIsolatedDeltaSec": 0.1248956364462751,
+          "LowerErrorBoundSec": -0.5467549053987234,
+          "UpperErrorBoundSec": 0.7965461782912736,
+          "ErrorBandWidthSec": 1.343301083689997,
+          "FuelRemainingKg": 74.4,
+          "GapAheadSec": 4.534999999999855
+        },
+        {
+          "LapInStint": 4,
+          "RawLapTimeSec": 98.124,
+          "ObservedPaceDeltaSec": 1.3580999999999932,
+          "PredictedIsolatedDeltaSec": 0.3464806281429414,
+          "LowerErrorBoundSec": -0.3789589666439051,
+          "UpperErrorBoundSec": 1.071920222929788,
+          "ErrorBandWidthSec": 1.450879189573693,
+          "FuelRemainingKg": 72.6,
+          "GapAheadSec": 3.969000000000051
+        },
+        {
+          "LapInStint": 5,
+          "RawLapTimeSec": 98.361,
+          "ObservedPaceDeltaSec": 1.5951000000000022,
+          "PredictedIsolatedDeltaSec": 0.3506997273791892,
+          "LowerErrorBoundSec": -0.31171370283225475,
+          "UpperErrorBoundSec": 1.0131131575906331,
+          "ErrorBandWidthSec": 1.3248268604228879,
+          "FuelRemainingKg": 70.8,
+          "GapAheadSec": 3.645999999999731
+        },
+        {
+          "LapInStint": 6,
+          "RawLapTimeSec": 98.318,
+          "ObservedPaceDeltaSec": 1.5520999999999958,
+          "PredictedIsolatedDeltaSec": 0.3696375805168579,
+          "LowerErrorBoundSec": -0.3531052370577482,
+          "UpperErrorBoundSec": 1.0923803980914641,
+          "ErrorBandWidthSec": 1.4454856351492122,
+          "FuelRemainingKg": 69.0,
+          "GapAheadSec": 3.486000000000786
+        },
+        {
+          "LapInStint": 7,
+          "RawLapTimeSec": 98.407,
+          "ObservedPaceDeltaSec": 1.6410999999999945,
+          "PredictedIsolatedDeltaSec": 0.3970249984292676,
+          "LowerErrorBoundSec": -0.2692401953496925,
+          "UpperErrorBoundSec": 1.0632901922082276,
+          "ErrorBandWidthSec": 1.3325303875579202,
+          "FuelRemainingKg": 67.19999999999999,
+          "GapAheadSec": 3.311999999999898
+        },
+        {
+          "LapInStint": 8,
+          "RawLapTimeSec": 98.2,
+          "ObservedPaceDeltaSec": 1.4341000000000008,
+          "PredictedIsolatedDeltaSec": 0.4302138487535277,
+          "LowerErrorBoundSec": -0.32489982480625484,
+          "UpperErrorBoundSec": 1.1853275223133102,
+          "ErrorBandWidthSec": 1.510227347119565,
+          "FuelRemainingKg": 65.4,
+          "GapAheadSec": 3.0520000000005894
+        },
+        {
+          "LapInStint": 9,
+          "RawLapTimeSec": 97.853,
+          "ObservedPaceDeltaSec": 1.0870999999999924,
+          "PredictedIsolatedDeltaSec": 0.4946268491886307,
+          "LowerErrorBoundSec": -0.3167844406568006,
+          "UpperErrorBoundSec": 1.306038139034062,
+          "ErrorBandWidthSec": 1.6228225796908626,
+          "FuelRemainingKg": 63.6,
+          "GapAheadSec": 2.5210000000006403
+        },
+        {
+          "LapInStint": 10,
+          "RawLapTimeSec": 97.878,
+          "ObservedPaceDeltaSec": 1.112099999999998,
+          "PredictedIsolatedDeltaSec": 0.482636769191135,
+          "LowerErrorBoundSec": -0.2271598468705877,
+          "UpperErrorBoundSec": 1.1924333852528577,
+          "ErrorBandWidthSec": 1.4195932321234455,
+          "FuelRemainingKg": 61.8,
+          "GapAheadSec": 2.032000000000153
+        },
+        {
+          "LapInStint": 11,
+          "RawLapTimeSec": 98.139,
+          "ObservedPaceDeltaSec": 1.3730999999999938,
+          "PredictedIsolatedDeltaSec": 0.6823390888830029,
+          "LowerErrorBoundSec": -0.11037344473937094,
+          "UpperErrorBoundSec": 1.4750516225053767,
+          "ErrorBandWidthSec": 1.5854250672447476,
+          "FuelRemainingKg": 60.0,
+          "GapAheadSec": 1.8810000000003129
+        },
+        {
+          "LapInStint": 12,
+          "RawLapTimeSec": 98.127,
+          "ObservedPaceDeltaSec": 1.361099999999993,
+          "PredictedIsolatedDeltaSec": 0.6015799285236475,
+          "LowerErrorBoundSec": -0.1413438225823217,
+          "UpperErrorBoundSec": 1.3445036796296166,
+          "ErrorBandWidthSec": 1.4858475022119384,
+          "FuelRemainingKg": 58.2,
+          "GapAheadSec": 1.668999999999869
+        },
+        {
+          "LapInStint": 13,
+          "RawLapTimeSec": 98.612,
+          "ObservedPaceDeltaSec": 1.8460999999999927,
+          "PredictedIsolatedDeltaSec": 0.6086199186266821,
+          "LowerErrorBoundSec": -0.04615520036798926,
+          "UpperErrorBoundSec": 1.2633950376213534,
+          "ErrorBandWidthSec": 1.3095502379893427,
+          "FuelRemainingKg": 56.4,
+          "GapAheadSec": 1.912000000000262
+        },
+        {
+          "LapInStint": 14,
+          "RawLapTimeSec": 98.199,
+          "ObservedPaceDeltaSec": 1.433099999999996,
+          "PredictedIsolatedDeltaSec": 0.576183321580031,
+          "LowerErrorBoundSec": 0.0694909729005273,
+          "UpperErrorBoundSec": 1.0828756702595348,
+          "ErrorBandWidthSec": 1.0133846973590075,
+          "FuelRemainingKg": 54.6,
+          "GapAheadSec": 1.8460000000004584
+        },
+        {
+          "LapInStint": 15,
+          "RawLapTimeSec": 98.585,
+          "ObservedPaceDeltaSec": 1.819099999999992,
+          "PredictedIsolatedDeltaSec": 0.629766139379653,
+          "LowerErrorBoundSec": 0.060550023173775225,
+          "UpperErrorBoundSec": 1.1989822555855307,
+          "ErrorBandWidthSec": 1.1384322324117555,
+          "FuelRemainingKg": 52.8,
+          "GapAheadSec": 2.0510000000003856
+        },
+        {
+          "LapInStint": 16,
+          "RawLapTimeSec": 98.282,
+          "ObservedPaceDeltaSec": 1.5160999999999945,
+          "PredictedIsolatedDeltaSec": 0.7067555272373427,
+          "LowerErrorBoundSec": 0.12294895419926488,
+          "UpperErrorBoundSec": 1.2905621002754204,
+          "ErrorBandWidthSec": 1.1676131460761556,
+          "FuelRemainingKg": 51.0,
+          "GapAheadSec": 5.224999999999454
+        },
+        {
+          "LapInStint": 17,
+          "RawLapTimeSec": 98.009,
+          "ObservedPaceDeltaSec": 1.2430999999999983,
+          "PredictedIsolatedDeltaSec": 0.8265447234811044,
+          "LowerErrorBoundSec": 0.28141995064309144,
+          "UpperErrorBoundSec": 1.3716694963191174,
+          "ErrorBandWidthSec": 1.090249545676026,
+          "FuelRemainingKg": 49.2,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 18,
+          "RawLapTimeSec": 97.871,
+          "ObservedPaceDeltaSec": 1.105099999999993,
+          "PredictedIsolatedDeltaSec": 0.7777073854960933,
+          "LowerErrorBoundSec": 0.25040620733873986,
+          "UpperErrorBoundSec": 1.3050085636534468,
+          "ErrorBandWidthSec": 1.054602356314707,
+          "FuelRemainingKg": 47.4,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 19,
+          "RawLapTimeSec": 97.769,
+          "ObservedPaceDeltaSec": 1.0031000000000034,
+          "PredictedIsolatedDeltaSec": 0.7825752664623765,
+          "LowerErrorBoundSec": 0.24563933335352606,
+          "UpperErrorBoundSec": 1.319511199571227,
+          "ErrorBandWidthSec": 1.073871866217701,
+          "FuelRemainingKg": 45.6,
+          "GapAheadSec": 15.0
+        }
+      ]
+    },
+    {
+      "StintId": "Spain_VER_H",
+      "Title": "2023 Spanish GP - Verstappen Stint 2 (Hard)",
+      "Circuit": "Spain",
+      "Driver": "VER",
+      "Compound": "HARD",
+      "TotalLaps": 24,
+      "Laps": [
+        {
+          "LapInStint": 2,
+          "RawLapTimeSec": 78.707,
+          "ObservedPaceDeltaSec": -0.0871000000000066,
+          "PredictedIsolatedDeltaSec": 0.3863475764523789,
+          "LowerErrorBoundSec": -0.3457072055934503,
+          "UpperErrorBoundSec": 1.1184023584982081,
+          "ErrorBandWidthSec": 1.4641095640916584,
+          "FuelRemainingKg": 54.6,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 3,
+          "RawLapTimeSec": 78.86,
+          "ObservedPaceDeltaSec": 0.0658999999999991,
+          "PredictedIsolatedDeltaSec": 0.4757039183830956,
+          "LowerErrorBoundSec": -0.21403810494400238,
+          "UpperErrorBoundSec": 1.1654459417101937,
+          "ErrorBandWidthSec": 1.379484046654196,
+          "FuelRemainingKg": 52.8,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 4,
+          "RawLapTimeSec": 78.976,
+          "ObservedPaceDeltaSec": 0.1818999999999988,
+          "PredictedIsolatedDeltaSec": 0.4730398718740703,
+          "LowerErrorBoundSec": -0.12144820657926064,
+          "UpperErrorBoundSec": 1.0675279503274013,
+          "ErrorBandWidthSec": 1.188976156906662,
+          "FuelRemainingKg": 51.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 5,
+          "RawLapTimeSec": 79.165,
+          "ObservedPaceDeltaSec": 0.370900000000006,
+          "PredictedIsolatedDeltaSec": 0.6045498391205186,
+          "LowerErrorBoundSec": -0.11715865729632846,
+          "UpperErrorBoundSec": 1.3262583355373656,
+          "ErrorBandWidthSec": 1.4434169928336942,
+          "FuelRemainingKg": 49.2,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 6,
+          "RawLapTimeSec": 78.878,
+          "ObservedPaceDeltaSec": 0.0838999999999998,
+          "PredictedIsolatedDeltaSec": 0.6404896823150076,
+          "LowerErrorBoundSec": 0.00045603072162148095,
+          "UpperErrorBoundSec": 1.2805233339083937,
+          "ErrorBandWidthSec": 1.2800673031867722,
+          "FuelRemainingKg": 47.4,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 7,
+          "RawLapTimeSec": 79.189,
+          "ObservedPaceDeltaSec": 0.3948999999999927,
+          "PredictedIsolatedDeltaSec": 0.6694900429736744,
+          "LowerErrorBoundSec": 0.05668867045779624,
+          "UpperErrorBoundSec": 1.2822914154895526,
+          "ErrorBandWidthSec": 1.2256027450317564,
+          "FuelRemainingKg": 45.6,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 8,
+          "RawLapTimeSec": 78.806,
+          "ObservedPaceDeltaSec": 0.0118999999999971,
+          "PredictedIsolatedDeltaSec": 0.6333310848678021,
+          "LowerErrorBoundSec": 0.05910401289305889,
+          "UpperErrorBoundSec": 1.2075581568425453,
+          "ErrorBandWidthSec": 1.1484541439494864,
+          "FuelRemainingKg": 43.8,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 9,
+          "RawLapTimeSec": 78.89,
+          "ObservedPaceDeltaSec": 0.0959000000000003,
+          "PredictedIsolatedDeltaSec": 0.6996144316039594,
+          "LowerErrorBoundSec": 0.11202272927440016,
+          "UpperErrorBoundSec": 1.2872061339335188,
+          "ErrorBandWidthSec": 1.1751834046591185,
+          "FuelRemainingKg": 42.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 10,
+          "RawLapTimeSec": 78.789,
+          "ObservedPaceDeltaSec": -0.0050999999999987,
+          "PredictedIsolatedDeltaSec": 0.7174158330763225,
+          "LowerErrorBoundSec": 0.12675281230005342,
+          "UpperErrorBoundSec": 1.3080788538525916,
+          "ErrorBandWidthSec": 1.1813260415525382,
+          "FuelRemainingKg": 40.2,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 11,
+          "RawLapTimeSec": 79.026,
+          "ObservedPaceDeltaSec": 0.231899999999996,
+          "PredictedIsolatedDeltaSec": 0.7708435079302215,
+          "LowerErrorBoundSec": 0.20220927724744642,
+          "UpperErrorBoundSec": 1.3394777386129966,
+          "ErrorBandWidthSec": 1.1372684613655502,
+          "FuelRemainingKg": 38.39999999999999,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 12,
+          "RawLapTimeSec": 79.417,
+          "ObservedPaceDeltaSec": 0.6229000000000013,
+          "PredictedIsolatedDeltaSec": 0.833556236082649,
+          "LowerErrorBoundSec": 0.25618861696615713,
+          "UpperErrorBoundSec": 1.4109238551991408,
+          "ErrorBandWidthSec": 1.1547352382329836,
+          "FuelRemainingKg": 36.6,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 13,
+          "RawLapTimeSec": 79.322,
+          "ObservedPaceDeltaSec": 0.5279000000000025,
+          "PredictedIsolatedDeltaSec": 0.9094093048918972,
+          "LowerErrorBoundSec": 0.2698482948997907,
+          "UpperErrorBoundSec": 1.5489703148840037,
+          "ErrorBandWidthSec": 1.279122019984213,
+          "FuelRemainingKg": 34.8,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 14,
+          "RawLapTimeSec": 79.388,
+          "ObservedPaceDeltaSec": 0.593900000000005,
+          "PredictedIsolatedDeltaSec": 0.9949761925992974,
+          "LowerErrorBoundSec": 0.307815685381436,
+          "UpperErrorBoundSec": 1.6821366998171587,
+          "ErrorBandWidthSec": 1.3743210144357227,
+          "FuelRemainingKg": 33.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 15,
+          "RawLapTimeSec": 79.53,
+          "ObservedPaceDeltaSec": 0.7359000000000009,
+          "PredictedIsolatedDeltaSec": 1.0586832735472704,
+          "LowerErrorBoundSec": 0.359834812005836,
+          "UpperErrorBoundSec": 1.7575317350887047,
+          "ErrorBandWidthSec": 1.3976969230828689,
+          "FuelRemainingKg": 31.200000000000003,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 16,
+          "RawLapTimeSec": 79.092,
+          "ObservedPaceDeltaSec": 0.2978999999999985,
+          "PredictedIsolatedDeltaSec": 1.063362845370362,
+          "LowerErrorBoundSec": 0.4099732513328733,
+          "UpperErrorBoundSec": 1.7167524394078508,
+          "ErrorBandWidthSec": 1.3067791880749775,
+          "FuelRemainingKg": 29.39999999999999,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 17,
+          "RawLapTimeSec": 78.912,
+          "ObservedPaceDeltaSec": 0.1179000000000058,
+          "PredictedIsolatedDeltaSec": 1.0346275693863916,
+          "LowerErrorBoundSec": 0.40586378363225206,
+          "UpperErrorBoundSec": 1.663391355140531,
+          "ErrorBandWidthSec": 1.257527571508279,
+          "FuelRemainingKg": 27.599999999999994,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 18,
+          "RawLapTimeSec": 78.97,
+          "ObservedPaceDeltaSec": 0.1758999999999986,
+          "PredictedIsolatedDeltaSec": 0.9931120823156906,
+          "LowerErrorBoundSec": 0.4061072214306187,
+          "UpperErrorBoundSec": 1.5801169432007625,
+          "ErrorBandWidthSec": 1.1740097217701437,
+          "FuelRemainingKg": 25.8,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 19,
+          "RawLapTimeSec": 79.104,
+          "ObservedPaceDeltaSec": 0.3098999999999989,
+          "PredictedIsolatedDeltaSec": 1.0241174349493884,
+          "LowerErrorBoundSec": 0.38667103808804926,
+          "UpperErrorBoundSec": 1.6615638318107275,
+          "ErrorBandWidthSec": 1.2748927937226784,
+          "FuelRemainingKg": 24.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 20,
+          "RawLapTimeSec": 78.84,
+          "ObservedPaceDeltaSec": 0.0459000000000031,
+          "PredictedIsolatedDeltaSec": 0.9740169948718042,
+          "LowerErrorBoundSec": 0.3795297295970874,
+          "UpperErrorBoundSec": 1.568504260146521,
+          "ErrorBandWidthSec": 1.1889745305494335,
+          "FuelRemainingKg": 22.200000000000003,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 21,
+          "RawLapTimeSec": 79.109,
+          "ObservedPaceDeltaSec": 0.3148999999999944,
+          "PredictedIsolatedDeltaSec": 0.9430328723136104,
+          "LowerErrorBoundSec": 0.40107254252011204,
+          "UpperErrorBoundSec": 1.4849932021071088,
+          "ErrorBandWidthSec": 1.0839206595869968,
+          "FuelRemainingKg": 20.39999999999999,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 22,
+          "RawLapTimeSec": 78.953,
+          "ObservedPaceDeltaSec": 0.1589000000000027,
+          "PredictedIsolatedDeltaSec": 1.058703059297394,
+          "LowerErrorBoundSec": 0.3644149980614906,
+          "UpperErrorBoundSec": 1.7529911205332975,
+          "ErrorBandWidthSec": 1.388576122471807,
+          "FuelRemainingKg": 18.599999999999994,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 23,
+          "RawLapTimeSec": 79.093,
+          "ObservedPaceDeltaSec": 0.2989000000000033,
+          "PredictedIsolatedDeltaSec": 1.0990648351568209,
+          "LowerErrorBoundSec": 0.3969841477602979,
+          "UpperErrorBoundSec": 1.8011455225533437,
+          "ErrorBandWidthSec": 1.404161374793046,
+          "FuelRemainingKg": 16.799999999999997,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 24,
+          "RawLapTimeSec": 79.221,
+          "ObservedPaceDeltaSec": 0.4269000000000034,
+          "PredictedIsolatedDeltaSec": 1.1992610769182397,
+          "LowerErrorBoundSec": 0.4102659416623031,
+          "UpperErrorBoundSec": 1.9882562121741763,
+          "ErrorBandWidthSec": 1.5779902705118731,
+          "FuelRemainingKg": 15.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 25,
+          "RawLapTimeSec": 78.768,
+          "ObservedPaceDeltaSec": -0.0260999999999995,
+          "PredictedIsolatedDeltaSec": 1.1966851816487951,
+          "LowerErrorBoundSec": 0.39566653969157173,
+          "UpperErrorBoundSec": 1.9977038236060185,
+          "ErrorBandWidthSec": 1.6020372839144468,
+          "FuelRemainingKg": 13.200000000000005,
+          "GapAheadSec": 15.0
+        }
+      ]
+    },
+    {
+      "StintId": "Spain_HAM_S",
+      "Title": "2023 Spanish GP - Hamilton Stint 3 (Soft)",
+      "Circuit": "Spain",
+      "Driver": "HAM",
+      "Compound": "SOFT",
+      "TotalLaps": 14,
+      "Laps": [
+        {
+          "LapInStint": 5,
+          "RawLapTimeSec": 78.621,
+          "ObservedPaceDeltaSec": 0.9351999999999948,
+          "PredictedIsolatedDeltaSec": 0.7109355942548816,
+          "LowerErrorBoundSec": -0.39117244330390655,
+          "UpperErrorBoundSec": 1.8130436318136698,
+          "ErrorBandWidthSec": 2.2042160751175763,
+          "FuelRemainingKg": 11.399999999999991,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 6,
+          "RawLapTimeSec": 78.564,
+          "ObservedPaceDeltaSec": 0.8781999999999925,
+          "PredictedIsolatedDeltaSec": 0.6484835964873433,
+          "LowerErrorBoundSec": -0.5180384125523857,
+          "UpperErrorBoundSec": 1.8150056055270722,
+          "ErrorBandWidthSec": 2.333044018079458,
+          "FuelRemainingKg": 9.599999999999994,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 7,
+          "RawLapTimeSec": 77.529,
+          "ObservedPaceDeltaSec": -0.156800000000004,
+          "PredictedIsolatedDeltaSec": 0.6070977304312953,
+          "LowerErrorBoundSec": -0.47764575010044774,
+          "UpperErrorBoundSec": 1.6918412109630383,
+          "ErrorBandWidthSec": 2.169486961063486,
+          "FuelRemainingKg": 7.799999999999997,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 8,
+          "RawLapTimeSec": 77.575,
+          "ObservedPaceDeltaSec": -0.1107999999999975,
+          "PredictedIsolatedDeltaSec": 0.6976275459246519,
+          "LowerErrorBoundSec": -0.361411756881838,
+          "UpperErrorBoundSec": 1.7566668487311419,
+          "ErrorBandWidthSec": 2.11807860561298,
+          "FuelRemainingKg": 6.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 9,
+          "RawLapTimeSec": 77.874,
+          "ObservedPaceDeltaSec": 0.1881999999999948,
+          "PredictedIsolatedDeltaSec": 0.8822588599655844,
+          "LowerErrorBoundSec": -0.27486557648309884,
+          "UpperErrorBoundSec": 2.0393832964142677,
+          "ErrorBandWidthSec": 2.3142488728973665,
+          "FuelRemainingKg": 5.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 10,
+          "RawLapTimeSec": 77.725,
+          "ObservedPaceDeltaSec": 0.0391999999999939,
+          "PredictedIsolatedDeltaSec": 0.9000121441185139,
+          "LowerErrorBoundSec": -0.14516438322229253,
+          "UpperErrorBoundSec": 1.9451886714593205,
+          "ErrorBandWidthSec": 2.090353054681613,
+          "FuelRemainingKg": 5.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 11,
+          "RawLapTimeSec": 77.848,
+          "ObservedPaceDeltaSec": 0.1621999999999985,
+          "PredictedIsolatedDeltaSec": 0.9233849065378126,
+          "LowerErrorBoundSec": -0.18918497826801683,
+          "UpperErrorBoundSec": 2.035954791343642,
+          "ErrorBandWidthSec": 2.225139769611659,
+          "FuelRemainingKg": 5.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 12,
+          "RawLapTimeSec": 78.138,
+          "ObservedPaceDeltaSec": 0.4522000000000048,
+          "PredictedIsolatedDeltaSec": 0.7982772525304626,
+          "LowerErrorBoundSec": -0.08162537395987723,
+          "UpperErrorBoundSec": 1.6781798790208025,
+          "ErrorBandWidthSec": 1.7598052529806796,
+          "FuelRemainingKg": 5.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 13,
+          "RawLapTimeSec": 78.475,
+          "ObservedPaceDeltaSec": 0.7891999999999939,
+          "PredictedIsolatedDeltaSec": 0.8043241118833792,
+          "LowerErrorBoundSec": -0.07384722171430325,
+          "UpperErrorBoundSec": 1.6824954454810617,
+          "ErrorBandWidthSec": 1.7563426671953648,
+          "FuelRemainingKg": 5.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 14,
+          "RawLapTimeSec": 77.627,
+          "ObservedPaceDeltaSec": -0.058800000000005,
+          "PredictedIsolatedDeltaSec": 1.0072604491013588,
+          "LowerErrorBoundSec": 0.14834286170817979,
+          "UpperErrorBoundSec": 1.8661780364945377,
+          "ErrorBandWidthSec": 1.717835174786358,
+          "FuelRemainingKg": 5.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 16,
+          "RawLapTimeSec": 78.967,
+          "ObservedPaceDeltaSec": 1.2811999999999983,
+          "PredictedIsolatedDeltaSec": 1.1068654492912733,
+          "LowerErrorBoundSec": 0.13834982499596404,
+          "UpperErrorBoundSec": 2.0753810735865823,
+          "ErrorBandWidthSec": 1.9370312485906185,
+          "FuelRemainingKg": 5.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 17,
+          "RawLapTimeSec": 78.579,
+          "ObservedPaceDeltaSec": 0.8931999999999931,
+          "PredictedIsolatedDeltaSec": 0.9504835957042403,
+          "LowerErrorBoundSec": 0.051438265329755706,
+          "UpperErrorBoundSec": 1.849528926078725,
+          "ErrorBandWidthSec": 1.7980906607489693,
+          "FuelRemainingKg": 5.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 18,
+          "RawLapTimeSec": 80.31,
+          "ObservedPaceDeltaSec": 2.624200000000002,
+          "PredictedIsolatedDeltaSec": 1.110858668148866,
+          "LowerErrorBoundSec": 0.13029498786573668,
+          "UpperErrorBoundSec": 2.091422348431995,
+          "ErrorBandWidthSec": 1.9611273605662585,
+          "FuelRemainingKg": 5.0,
+          "GapAheadSec": 15.0
+        },
+        {
+          "LapInStint": 19,
+          "RawLapTimeSec": 79.12,
+          "ObservedPaceDeltaSec": 1.434200000000004,
+          "PredictedIsolatedDeltaSec": 1.0403776473658888,
+          "LowerErrorBoundSec": 0.22936704512414918,
+          "UpperErrorBoundSec": 1.8513882496076284,
+          "ErrorBandWidthSec": 1.6220212044834792,
+          "FuelRemainingKg": 5.0,
+          "GapAheadSec": 15.0
+        }
+      ]
+    }
+  ]
+}

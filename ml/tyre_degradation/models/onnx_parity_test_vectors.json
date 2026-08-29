@@ -1,0 +1,92 @@
+[
+  {
+    "LapInStint": 12.0,
+    "FuelRemainingKg": 5.0,
+    "GapAheadSec": 2.0179998874664307,
+    "SessionProgression": 0.8484848737716675,
+    "TrackTemp": 28.100000381469727,
+    "CompoundCode": 2.0,
+    "ExpectedPaceDeltaSec": 0.4381526754379922
+  },
+  {
+    "LapInStint": 19.0,
+    "FuelRemainingKg": 70.80000305175781,
+    "GapAheadSec": 1.5859999656677246,
+    "SessionProgression": 0.32758620381355286,
+    "TrackTemp": 32.5,
+    "CompoundCode": 2.0,
+    "ExpectedPaceDeltaSec": 1.6682904102375202
+  },
+  {
+    "LapInStint": 12.0,
+    "FuelRemainingKg": 9.600000381469727,
+    "GapAheadSec": 7.178999900817871,
+    "SessionProgression": 0.7464788556098938,
+    "TrackTemp": 31.100000381469727,
+    "CompoundCode": 2.0,
+    "ExpectedPaceDeltaSec": 0.16483859188019823
+  },
+  {
+    "LapInStint": 7.0,
+    "FuelRemainingKg": 40.20000076293945,
+    "GapAheadSec": 11.208000183105469,
+    "SessionProgression": 0.6315789222717285,
+    "TrackTemp": 29.600000381469727,
+    "CompoundCode": 2.0,
+    "ExpectedPaceDeltaSec": 0.30611654934277893
+  },
+  {
+    "LapInStint": 17.0,
+    "FuelRemainingKg": 52.79999923706055,
+    "GapAheadSec": 2.7200000286102295,
+    "SessionProgression": 0.4084506928920746,
+    "TrackTemp": 31.899999618530273,
+    "CompoundCode": 2.0,
+    "ExpectedPaceDeltaSec": 1.1972389620183914
+  },
+  {
+    "LapInStint": 15.0,
+    "FuelRemainingKg": 52.79999923706055,
+    "GapAheadSec": 8.015000343322754,
+    "SessionProgression": 0.4084506928920746,
+    "TrackTemp": 31.899999618530273,
+    "CompoundCode": 2.0,
+    "ExpectedPaceDeltaSec": 1.0458517480513838
+  },
+  {
+    "LapInStint": 29.0,
+    "FuelRemainingKg": 5.0,
+    "GapAheadSec": 1.7339999675750732,
+    "SessionProgression": 0.9848484992980957,
+    "TrackTemp": 27.5,
+    "CompoundCode": 2.0,
+    "ExpectedPaceDeltaSec": 0.5494897225653882
+  },
+  {
+    "LapInStint": 6.0,
+    "FuelRemainingKg": 99.5999984741211,
+    "GapAheadSec": 0.8320000171661377,
+    "SessionProgression": 0.04545454680919647,
+    "TrackTemp": 32.70000076293945,
+    "CompoundCode": 0.0,
+    "ExpectedPaceDeltaSec": 0.7820726641417333
+  },
+  {
+    "LapInStint": 10.0,
+    "FuelRemainingKg": 58.20000076293945,
+    "GapAheadSec": 3.2200000286102295,
+    "SessionProgression": 0.39393940567970276,
+    "TrackTemp": 30.299999237060547,
+    "CompoundCode": 0.0,
+    "ExpectedPaceDeltaSec": 0.9434314321738537
+  },
+  {
+    "LapInStint": 6.0,
+    "FuelRemainingKg": 29.399999618530273,
+    "GapAheadSec": 2.696000099182129,
+    "SessionProgression": 0.6363636255264282,
+    "TrackTemp": 29.899999618530273,
+    "CompoundCode": 2.0,
+    "ExpectedPaceDeltaSec": 0.31933908309138653
+  }
+]

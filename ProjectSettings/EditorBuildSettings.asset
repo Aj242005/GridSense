@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Circuits/Bahrain_Occlusion.unity
+    guid: 06efc43a99a8ec14793a81efb01cad73
+  - enabled: 1
+    path: Assets/Scenes/Circuits/Shanghai_Occlusion.unity
+    guid: 378383ef07e5bed43b8aae94d4eb6079
+  - enabled: 1
+    path: Assets/Scenes/Circuits/Suzuka_Occlusion.unity
+    guid: d30c32d24dd3cb744a5a083e85e34bab
+  - enabled: 1
+    path: Assets/Scenes/Circuits/YasMarina_Occlusion.unity
+    guid: 271440540630e034bb47dfb953806a11
+  m_configObjects:
+    com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

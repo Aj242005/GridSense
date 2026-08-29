@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23e5ee4ce343ba4dabca36d19473d19, type: 3}
+  m_Name: RedBullRing_TrackMetadata
+  m_EditorClassIdentifier: Assembly-CSharp::GridSense.Data.TrackMetadata
+  circuitName: Red Bull Ring
+  country: Austria
+  location: Spielberg
+  trackLengthMetres: 4326
+  raceLaps: 71
+  raceDistanceMetres: 307018
+  totalCorners: 10
+  corners:
+  - turnNumber: 1
+    name: Niki Lauda Kurve
+    direction: 1
+    speedCategory: 0
+    radiusMetres: 30
+  - turnNumber: 2
+    name: Madlich
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 60
+  - turnNumber: 3
+    name: Remus
+    direction: 1
+    speedCategory: 0
+    radiusMetres: 20
+  - turnNumber: 4
+    name: Rauch
+    direction: 1
+    speedCategory: 2
+    radiusMetres: 200
+  - turnNumber: 5
+    name: 
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 70
+  - turnNumber: 6
+    name: Schlossgold
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 55
+  - turnNumber: 7
+    name: Wurm
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 50
+  - turnNumber: 8
+    name: Rindt
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 60
+  - turnNumber: 9
+    name: A1
+    direction: 0
+    speedCategory: 2
+    radiusMetres: 150
+  - turnNumber: 10
+    name: Jochen Rindt Kurve
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 45
+  sectorBoundaries:
+    sector1End: 0.2
+    sector2End: 0.73
+    sector1Description: Start/finish line through Turn 1 (Niki Lauda Kurve)
+    sector2Description: Turn 1 exit through Turn 7 (downhill section)
+    sector3Description: Turn 7 exit through final corners to start/finish
+  startFinishPosition: {x: 22.81, y: 54, z: 1.67}
+  startFinishForward: {x: 0.97980404, y: 0, z: 0.19996001}
+  dataSourceNotes: "ALL VALUES: Public reference data (formula1.com, Wikipedia, global.honda).\nTrack
+    length: 4.326 km \u2014 official F1 specification.\nCorner count: 10 \u2014 official
+    F1 specification.\nCorner names: Official Red Bull Ring naming convention.\nCorner
+    radii: Approximate \u2014 derived from track maps and sim-racing references.\nSpeed
+    categories: Approximate \u2014 based on typical F1 telemetry data.\nSector boundaries:
+    Normalised estimates from F1 broadcast sector lines.\nStart/finish position:
+    Approximate \u2014 mesh-derived estimate from pit straight geometry."

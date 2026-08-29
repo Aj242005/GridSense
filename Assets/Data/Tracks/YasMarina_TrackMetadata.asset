@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23e5ee4ce343ba4dabca36d19473d19, type: 3}
+  m_Name: YasMarina_TrackMetadata
+  m_EditorClassIdentifier: Assembly-CSharp::GridSense.Data.TrackMetadata
+  circuitName: Yas Marina Circuit
+  country: United Arab Emirates
+  location: Abu Dhabi, Yas Island
+  trackLengthMetres: 5281
+  raceLaps: 58
+  raceDistanceMetres: 306183
+  totalCorners: 16
+  corners:
+  - turnNumber: 1
+    name: 
+    direction: 0
+    speedCategory: 0
+    radiusMetres: 25
+  - turnNumber: 2
+    name: 
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 70
+  - turnNumber: 3
+    name: 
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 80
+  - turnNumber: 4
+    name: 
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 60
+  - turnNumber: 5
+    name: 
+    direction: 1
+    speedCategory: 0
+    radiusMetres: 22
+  - turnNumber: 6
+    name: 
+    direction: 0
+    speedCategory: 0
+    radiusMetres: 30
+  - turnNumber: 7
+    name: 
+    direction: 1
+    speedCategory: 2
+    radiusMetres: 200
+  - turnNumber: 8
+    name: 
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 75
+  - turnNumber: 9
+    name: 
+    direction: 1
+    speedCategory: 0
+    radiusMetres: 28
+  - turnNumber: 10
+    name: 
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 55
+  - turnNumber: 11
+    name: 
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 65
+  - turnNumber: 12
+    name: 
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 50
+  - turnNumber: 13
+    name: 
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 55
+  - turnNumber: 14
+    name: 
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 60
+  - turnNumber: 15
+    name: 
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 45
+  - turnNumber: 16
+    name: 
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 50
+  sectorBoundaries:
+    sector1End: 0.22
+    sector2End: 0.65
+    sector1Description: Start/finish, Turn 1 hairpin through Turn 5 hairpin
+    sector2Description: Turn 5 exit, back straight, heavy braking into Turn 6 through
+      Turn 9
+    sector3Description: Turn 9 exit through hotel complex section (Turns 10-16) to
+      start/finish
+  startFinishPosition: {x: -115.76, y: 15.15, z: -172.63}
+  startFinishForward: {x: 0.8, y: 0, z: 0.6}
+  dataSourceNotes: "ALL VALUES: Public reference data (formula1.com, Wikipedia, global.honda).\nTrack
+    length: 5.281 km \u2014 official F1 specification (post-2021 layout).\nNOTE:
+    This is the redesigned 2021+ layout (16 corners), NOT the original 21-corner
+    layout.\nCorner count: 16 \u2014 official F1 specification.\nCorner directions:
+    F1 official track map (post-2021 redesign).\nCorner radii: Approximate \u2014
+    derived from track maps and sim-racing references.\nSpeed categories: Approximate
+    \u2014 based on typical F1 telemetry data.\nSector boundaries: Normalised estimates
+    from F1 broadcast sector lines.\nStart/finish position: Approximate \u2014 mesh-derived
+    estimate from pit straight geometry."

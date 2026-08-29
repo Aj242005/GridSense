@@ -1,0 +1,76 @@
+# ==============================================================================
+# GridSense - Unity + Python GitIgnore
+# ==============================================================================
+
+# --- Unity Temporary & Generated Folders ---
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Aa]ssets/[Aa]ssetStoreTools*
+
+# --- Visual Studio / Rider / IDE Caches ---
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+*.pidb.meta
+
+# --- OS Artifacts ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# --- Python & Virtual Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# --- FastF1 & Machine Learning Caches ---
+ml/**/cache/
+*.sqlite
+*.sqlite3
+*.ff1pkl
+ml/**/logs/
+ml/**/checkpoints/
+ml/**/wandb/
+.tensorboard/
+
+# --- Build Outputs & Logs ---
+*.log
+*_log.txt
+*.exe
+*.dll
+!Assets/**/*.dll
+!Packages/**/*.dll
+build_run_test.log
+standalone_build_log.txt
+benchmark_run_log.txt
+clean_compile*.log
+redbull_submesh_analysis.csv
+redbull_uv_analysis.csv
+circuit_deep_inspection.txt

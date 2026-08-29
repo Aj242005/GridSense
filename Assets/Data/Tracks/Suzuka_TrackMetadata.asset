@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23e5ee4ce343ba4dabca36d19473d19, type: 3}
+  m_Name: Suzuka_TrackMetadata
+  m_EditorClassIdentifier: Assembly-CSharp::GridSense.Data.TrackMetadata
+  circuitName: Suzuka International Racing Course
+  country: Japan
+  location: Suzuka, Mie Prefecture
+  trackLengthMetres: 5807
+  raceLaps: 53
+  raceDistanceMetres: 307471
+  totalCorners: 18
+  corners:
+  - turnNumber: 1
+    name: First Curve
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 85
+  - turnNumber: 2
+    name: Second Curve
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 80
+  - turnNumber: 3
+    name: Esses (entry)
+    direction: 1
+    speedCategory: 2
+    radiusMetres: 110
+  - turnNumber: 4
+    name: Esses
+    direction: 0
+    speedCategory: 2
+    radiusMetres: 100
+  - turnNumber: 5
+    name: Esses
+    direction: 1
+    speedCategory: 2
+    radiusMetres: 100
+  - turnNumber: 6
+    name: Esses (exit)
+    direction: 0
+    speedCategory: 2
+    radiusMetres: 95
+  - turnNumber: 7
+    name: Dunlop
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 60
+  - turnNumber: 8
+    name: Degner 1
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 55
+  - turnNumber: 9
+    name: Degner 2
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 45
+  - turnNumber: 10
+    name: Hairpin
+    direction: 1
+    speedCategory: 0
+    radiusMetres: 15
+  - turnNumber: 11
+    name: 200R
+    direction: 0
+    speedCategory: 2
+    radiusMetres: 200
+  - turnNumber: 12
+    name: Spoon (entry)
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 65
+  - turnNumber: 13
+    name: Spoon (exit)
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 55
+  - turnNumber: 14
+    name: Back Straight entry
+    direction: 1
+    speedCategory: 2
+    radiusMetres: 300
+  - turnNumber: 15
+    name: 130R
+    direction: 0
+    speedCategory: 2
+    radiusMetres: 130
+  - turnNumber: 16
+    name: Casio Triangle (entry)
+    direction: 1
+    speedCategory: 0
+    radiusMetres: 20
+  - turnNumber: 17
+    name: Casio Triangle
+    direction: 0
+    speedCategory: 0
+    radiusMetres: 25
+  - turnNumber: 18
+    name: Casio Triangle (exit)
+    direction: 1
+    speedCategory: 0
+    radiusMetres: 30
+  sectorBoundaries:
+    sector1End: 0.28
+    sector2End: 0.68
+    sector1Description: Start/finish through the Esses (Turns 1-6, fast flowing section)
+    sector2Description: Dunlop curve through Degner curves, Hairpin, and Spoon Curve
+    sector3Description: Back straight, 130R, Casio Triangle chicane to start/finish
+  startFinishPosition: {x: -61.61, y: 27.19, z: -10.37}
+  startFinishForward: {x: 0.45121995, y: 0, z: 0.8924128}
+  dataSourceNotes: "ALL VALUES: Public reference data (formula1.com, Wikipedia, japan.gp,
+    f1technical.net).\nTrack length: 5.807 km \u2014 official F1 specification.\nCorner
+    count: 18 \u2014 official F1 specification (10R, 8L).\nCorner names: Traditional
+    Suzuka naming convention.\nCorner radii: Approximate \u2014 130R is named for
+    its ~130m radius.\nSpeed categories: Approximate \u2014 based on typical F1 telemetry
+    data.\nLayout: Unique figure-of-eight with overpass.\nSector boundaries: Normalised
+    estimates from F1 broadcast sector lines.\nStart/finish position: Approximate
+    \u2014 mesh-derived estimate from pit straight geometry."

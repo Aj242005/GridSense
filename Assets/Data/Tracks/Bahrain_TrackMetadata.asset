@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23e5ee4ce343ba4dabca36d19473d19, type: 3}
+  m_Name: Bahrain_TrackMetadata
+  m_EditorClassIdentifier: Assembly-CSharp::GridSense.Data.TrackMetadata
+  circuitName: Bahrain International Circuit
+  country: Bahrain
+  location: Sakhir
+  trackLengthMetres: 5412
+  raceLaps: 57
+  raceDistanceMetres: 308238
+  totalCorners: 15
+  corners:
+  - turnNumber: 1
+    name: 
+    direction: 1
+    speedCategory: 0
+    radiusMetres: 30
+  - turnNumber: 2
+    name: 
+    direction: 0
+    speedCategory: 0
+    radiusMetres: 40
+  - turnNumber: 3
+    name: 
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 80
+  - turnNumber: 4
+    name: 
+    direction: 1
+    speedCategory: 0
+    radiusMetres: 25
+  - turnNumber: 5
+    name: 
+    direction: 0
+    speedCategory: 2
+    radiusMetres: 150
+  - turnNumber: 6
+    name: 
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 60
+  - turnNumber: 7
+    name: 
+    direction: 0
+    speedCategory: 2
+    radiusMetres: 120
+  - turnNumber: 8
+    name: 
+    direction: 1
+    speedCategory: 0
+    radiusMetres: 25
+  - turnNumber: 9
+    name: 
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 50
+  - turnNumber: 10
+    name: 
+    direction: 0
+    speedCategory: 0
+    radiusMetres: 35
+  - turnNumber: 11
+    name: 
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 55
+  - turnNumber: 12
+    name: 
+    direction: 1
+    speedCategory: 2
+    radiusMetres: 100
+  - turnNumber: 13
+    name: 
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 70
+  - turnNumber: 14
+    name: 
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 55
+  - turnNumber: 15
+    name: 
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 50
+  sectorBoundaries:
+    sector1End: 0.23
+    sector2End: 0.68
+    sector1Description: Start/finish line to exit of Turn 3
+    sector2Description: Exit of Turn 3 to exit of Turn 10
+    sector3Description: Exit of Turn 10 back to start/finish line
+  startFinishPosition: {x: -281.04, y: 99.97, z: 76.54}
+  startFinishForward: {x: 0, y: 0, z: 1}
+  dataSourceNotes: "ALL VALUES: Public reference data (formula1.com, Wikipedia, F1
+    broadcast).\nTrack length: 5.412 km \u2014 official F1 specification.\nCorner
+    count: 15 \u2014 official F1 specification (8R, 7L).\nCorner directions: F1 official
+    track map + broadcast analysis.\nCorner radii: Approximate \u2014 derived from
+    sim-racing references and track maps.\nSpeed categories: Approximate \u2014 based
+    on typical F1 telemetry data.\nSector boundaries: Normalised estimates from F1
+    broadcast sector lines.\nStart/finish position: Approximate \u2014 mesh-derived
+    estimate from pit straight geometry."

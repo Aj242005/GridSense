@@ -1,0 +1,9 @@
+fastf1>=3.4.0
+interpret>=0.7.0
+pygam>=0.9.0
+scikit-learn>=1.4.0
+pandas>=2.0.0
+numpy>=1.24.0
+onnx>=1.15.0
+skl2onnx>=1.16.0
+matplotlib>=3.7.0

@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23e5ee4ce343ba4dabca36d19473d19, type: 3}
+  m_Name: Shanghai_TrackMetadata
+  m_EditorClassIdentifier: Assembly-CSharp::GridSense.Data.TrackMetadata
+  circuitName: Shanghai International Circuit
+  country: China
+  location: Shanghai
+  trackLengthMetres: 5451
+  raceLaps: 56
+  raceDistanceMetres: 305066
+  totalCorners: 16
+  corners:
+  - turnNumber: 1
+    name: 
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 75
+  - turnNumber: 2
+    name: 
+    direction: 1
+    speedCategory: 0
+    radiusMetres: 20
+  - turnNumber: 3
+    name: 
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 65
+  - turnNumber: 4
+    name: 
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 60
+  - turnNumber: 5
+    name: 
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 55
+  - turnNumber: 6
+    name: 
+    direction: 1
+    speedCategory: 0
+    radiusMetres: 30
+  - turnNumber: 7
+    name: 
+    direction: 0
+    speedCategory: 2
+    radiusMetres: 180
+  - turnNumber: 8
+    name: 
+    direction: 1
+    speedCategory: 2
+    radiusMetres: 170
+  - turnNumber: 9
+    name: 
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 70
+  - turnNumber: 10
+    name: 
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 65
+  - turnNumber: 11
+    name: 
+    direction: 1
+    speedCategory: 0
+    radiusMetres: 25
+  - turnNumber: 12
+    name: 
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 50
+  - turnNumber: 13
+    name: 
+    direction: 1
+    speedCategory: 2
+    radiusMetres: 300
+  - turnNumber: 14
+    name: 
+    direction: 0
+    speedCategory: 0
+    radiusMetres: 22
+  - turnNumber: 15
+    name: 
+    direction: 1
+    speedCategory: 1
+    radiusMetres: 80
+  - turnNumber: 16
+    name: 
+    direction: 0
+    speedCategory: 1
+    radiusMetres: 90
+  sectorBoundaries:
+    sector1End: 0.24
+    sector2End: 0.71
+    sector1Description: Start/finish through spiral Turns 1-2 to exit of Turn 4
+    sector2Description: Exit Turn 4 through high-speed Turns 7-8 to entry of Turn
+      13
+    sector3Description: Turn 13 (long sweeper), back straight, Turn 14 hairpin to
+      start/finish
+  startFinishPosition: {x: 98.86, y: 1.25, z: -119.27}
+  startFinishForward: {x: 0.28, y: 0, z: 0.96}
+  dataSourceNotes: "ALL VALUES: Public reference data (formula1.com, Wikipedia, f1mix.com).\nTrack
+    length: 5.451 km \u2014 official F1 specification.\nCorner count: 16 \u2014 official
+    F1 specification (9R, 7L).\nCorner directions: F1 official track map.\nCorner
+    radii: Approximate \u2014 derived from track maps and sim-racing references.\nSpeed
+    categories: Approximate \u2014 based on typical F1 telemetry data.\nSector boundaries:
+    Normalised estimates from F1 broadcast sector lines.\nTurns 1-2 form the iconic
+    tightening spiral.\nTurn 13 is ~1.2km long sweeping right-hander.\nStart/finish
+    position: Approximate \u2014 mesh-derived estimate from pit straight geometry."

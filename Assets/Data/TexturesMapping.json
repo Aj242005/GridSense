@@ -1,0 +1,3000 @@
+{
+  "F1_Car": {
+    "Object_0": {
+      "materialName": "mcl35m_c_png",
+      "baseTexture": "mcl35m_c_png_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Car/Textures"
+    },
+    "Object_1": {
+      "materialName": "mcl35m_h_png",
+      "baseTexture": "mcl35m_h_png_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Car/Textures"
+    },
+    "Object_2": {
+      "materialName": "mcl35m_m_png",
+      "baseTexture": "mcl35m_m_png_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Car/Textures"
+    },
+    "Object_3": {
+      "materialName": "mcl35m_png",
+      "baseTexture": "mcl35m_png_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Car/Textures"
+    },
+    "Object_4": {
+      "materialName": "rim_png",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Car/Textures"
+    },
+    "Object_5": {
+      "materialName": "st_wheel_png",
+      "baseTexture": "st_wheel_png_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Car/Textures"
+    },
+    "Object_6": {
+      "materialName": "tread_png",
+      "baseTexture": "tread_png_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Car/Textures"
+    },
+    "Object_7": {
+      "materialName": "tyrewall_png",
+      "baseTexture": "tyrewall_png_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Car/Textures"
+    }
+  },
+  "Bahrain": {
+    "Object_0": {
+      "materialName": "Material_41.001",
+      "baseTexture": "Material_41.001_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_1": {
+      "materialName": "Material_41.001_0",
+      "baseTexture": "Material_41.001_0_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_2": {
+      "materialName": "Material_41.001_1",
+      "baseTexture": "Material_41.001_1_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_3": {
+      "materialName": "Material_41.001_1",
+      "baseTexture": "Material_41.001_1_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_4": {
+      "materialName": "Material_41.001_2",
+      "baseTexture": "Material_41.001_2_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_5": {
+      "materialName": "Material_41.001_3",
+      "baseTexture": "Material_41.001_3_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_6": {
+      "materialName": "Material_41.001_4",
+      "baseTexture": "Material_41.001_4_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_7": {
+      "materialName": "Material_41.001_5",
+      "baseTexture": "Material_41.001_5_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_8": {
+      "materialName": "Material_41.001_6",
+      "baseTexture": "Material_41.001_6_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_9": {
+      "materialName": "Material_41.001_7",
+      "baseTexture": "Material_41.001_7_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_10": {
+      "materialName": "Material_41.001_8",
+      "baseTexture": "Material_41.001_8_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_11": {
+      "materialName": "Material_41.001_8",
+      "baseTexture": "Material_41.001_8_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_12": {
+      "materialName": "Material_41.001_8",
+      "baseTexture": "Material_41.001_8_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_13": {
+      "materialName": "Bahrainv3001791Mtl_97",
+      "baseTexture": "Bahrainv3001791Mtl_97_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_14": {
+      "materialName": "Material_41.001_9",
+      "baseTexture": "Material_41.001_9_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_15": {
+      "materialName": "Bahrainv3001791Mtl_7",
+      "baseTexture": "Bahrainv3001791Mtl_7_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_16": {
+      "materialName": "Material_41.001_10",
+      "baseTexture": "Material_41.001_10_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_17": {
+      "materialName": "Material_41.001_11",
+      "baseTexture": "Material_41.001_11_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_18": {
+      "materialName": "Material_41.001_12",
+      "baseTexture": "Material_41.001_12_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_19": {
+      "materialName": "Material_41.001_13",
+      "baseTexture": "Material_41.001_13_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_20": {
+      "materialName": "Material_41.001_14",
+      "baseTexture": "Material_41.001_14_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_21": {
+      "materialName": "Material_41.001_15",
+      "baseTexture": "Material_41.001_15_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_22": {
+      "materialName": "Material_41.001_16",
+      "baseTexture": "Material_41.001_16_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_23": {
+      "materialName": "Material_41.001_17",
+      "baseTexture": "Material_41.001_17_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_24": {
+      "materialName": "Material_41.001_18",
+      "baseTexture": "Material_41.001_18_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_25": {
+      "materialName": "Material_41.001_19",
+      "baseTexture": "Material_41.001_19_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_26": {
+      "materialName": "Material_41.001_20",
+      "baseTexture": "Material_41.001_20_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_27": {
+      "materialName": "Material_41.001_21",
+      "baseTexture": "Material_41.001_21_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_28": {
+      "materialName": "Material_41.001_22",
+      "baseTexture": "Material_41.001_22_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_29": {
+      "materialName": "Material_41.001_23",
+      "baseTexture": "Material_41.001_23_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_30": {
+      "materialName": "Material_41.001_24",
+      "baseTexture": "Material_41.001_24_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_31": {
+      "materialName": "Material_41.001_25",
+      "baseTexture": "Material_41.001_25_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_32": {
+      "materialName": "Material_41.001_26",
+      "baseTexture": "Material_41.001_26_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_33": {
+      "materialName": "Material_41.001_27",
+      "baseTexture": "Material_41.001_27_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_34": {
+      "materialName": "Material_41.001_28",
+      "baseTexture": "Material_41.001_28_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_35": {
+      "materialName": "Material_41.001_29",
+      "baseTexture": "Material_41.001_29_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_36": {
+      "materialName": "Material_41.001_30",
+      "baseTexture": "Material_41.001_30_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_37": {
+      "materialName": "Material_41.001_31",
+      "baseTexture": "Material_41.001_31_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_38": {
+      "materialName": "Material_41.001_32",
+      "baseTexture": "Material_41.001_32_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_39": {
+      "materialName": "Material_41.001_33",
+      "baseTexture": "Material_41.001_33_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_40": {
+      "materialName": "Material_41.001_34",
+      "baseTexture": "Material_41.001_34_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_41": {
+      "materialName": "Material_41.001_35",
+      "baseTexture": "Material_41.001_35_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_42": {
+      "materialName": "Material_41.001_36",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_43": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_44": {
+      "materialName": "Material_41.001_37",
+      "baseTexture": "Material_41.001_37_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_45": {
+      "materialName": "Material_41.001_38",
+      "baseTexture": "Material_41.001_38_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_46": {
+      "materialName": "Material_41.001_39",
+      "baseTexture": "Material_41.001_39_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_47": {
+      "materialName": "Material_41.001_40",
+      "baseTexture": "Material_41.001_40_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_48": {
+      "materialName": "Material_41.001_41",
+      "baseTexture": "Material_41.001_41_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_49": {
+      "materialName": "Material_41.001_42",
+      "baseTexture": "Material_41.001_42_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_50": {
+      "materialName": "Material_41.001_43",
+      "baseTexture": "Material_41.001_43_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_51": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_52": {
+      "materialName": "Material_41.001_44",
+      "baseTexture": "Material_41.001_44_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_53": {
+      "materialName": "Material_41.001_45",
+      "baseTexture": "Material_41.001_45_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_54": {
+      "materialName": "Material_41.001_46",
+      "baseTexture": "Material_41.001_46_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_55": {
+      "materialName": "Material_41.001_47",
+      "baseTexture": "Material_41.001_47_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_56": {
+      "materialName": "Material_41.001_48",
+      "baseTexture": "Material_41.001_48_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_57": {
+      "materialName": "Material_41.001_49",
+      "baseTexture": "Material_41.001_49_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_58": {
+      "materialName": "Material_41.001_50",
+      "baseTexture": "Material_41.001_50_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_59": {
+      "materialName": "Material_41.001_51",
+      "baseTexture": "Material_41.001_51_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_60": {
+      "materialName": "Material_41.001_52",
+      "baseTexture": "Material_41.001_52_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_61": {
+      "materialName": "Material_41.001_53",
+      "baseTexture": "Material_41.001_53_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_62": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_63": {
+      "materialName": "Material_41.001_54",
+      "baseTexture": "Material_41.001_54_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_64": {
+      "materialName": "Material_41.001_55",
+      "baseTexture": "Material_41.001_55_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_65": {
+      "materialName": "Material_41.001_56",
+      "baseTexture": "Material_41.001_56_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_66": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_67": {
+      "materialName": "Material_41.001_57",
+      "baseTexture": "Material_41.001_57_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_68": {
+      "materialName": "Material_41.001_58",
+      "baseTexture": "Material_41.001_58_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_69": {
+      "materialName": "Material_41.001_59",
+      "baseTexture": "Material_41.001_59_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_70": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_71": {
+      "materialName": "Material_41.001_60",
+      "baseTexture": "Material_41.001_60_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_72": {
+      "materialName": "Material_41.001_61",
+      "baseTexture": "Material_41.001_61_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_73": {
+      "materialName": "Material_41.001_62",
+      "baseTexture": "Material_41.001_62_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_74": {
+      "materialName": "Material_41.001_63",
+      "baseTexture": "Material_41.001_63_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_75": {
+      "materialName": "Material_41.001_64",
+      "baseTexture": "Material_41.001_64_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_76": {
+      "materialName": "Material_41.001_65",
+      "baseTexture": "Material_41.001_65_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_77": {
+      "materialName": "Material_41.001_66",
+      "baseTexture": "Material_41.001_66_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_78": {
+      "materialName": "Material_41.001_67",
+      "baseTexture": "Material_41.001_67_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_79": {
+      "materialName": "Material_41.001_68",
+      "baseTexture": "Material_41.001_68_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_80": {
+      "materialName": "Material_41.001_69",
+      "baseTexture": "Material_41.001_69_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_81": {
+      "materialName": "Material_41.001_70",
+      "baseTexture": "Material_41.001_70_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_82": {
+      "materialName": "Material_41.001_71",
+      "baseTexture": "Material_41.001_71_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_83": {
+      "materialName": "Material_41.001_72",
+      "baseTexture": "Material_41.001_72_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_84": {
+      "materialName": "Material_41.001_73",
+      "baseTexture": "Material_41.001_73_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_85": {
+      "materialName": "Material_41.001_74",
+      "baseTexture": "Material_41.001_74_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_86": {
+      "materialName": "Material_41.001_75",
+      "baseTexture": "Material_41.001_75_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_87": {
+      "materialName": "Material_41.001_76",
+      "baseTexture": "Material_41.001_76_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_88": {
+      "materialName": "Material_41.001_77",
+      "baseTexture": "Material_41.001_77_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_89": {
+      "materialName": "Material_41.001_78",
+      "baseTexture": "Material_41.001_78_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_90": {
+      "materialName": "Material_41.001_79",
+      "baseTexture": "Material_41.001_79_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_91": {
+      "materialName": "Material_41.001_80",
+      "baseTexture": "Material_41.001_80_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_92": {
+      "materialName": "Material_41.001_81",
+      "baseTexture": "Material_41.001_81_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_93": {
+      "materialName": "Material_41.001_82",
+      "baseTexture": "Material_41.001_82_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_94": {
+      "materialName": "Material_41.001_83",
+      "baseTexture": "Material_41.001_83_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_95": {
+      "materialName": "Material_41.001_84",
+      "baseTexture": "Material_41.001_84_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_96": {
+      "materialName": "Material_41.001_85",
+      "baseTexture": "Material_41.001_85_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_97": {
+      "materialName": "Material_41.001_86",
+      "baseTexture": "Material_41.001_86_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_98": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_99": {
+      "materialName": "Material_41.001_87",
+      "baseTexture": "Material_41.001_87_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_100": {
+      "materialName": "Material_41.001_88",
+      "baseTexture": "Material_41.001_88_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_101": {
+      "materialName": "Material_41.001_89",
+      "baseTexture": "Material_41.001_89_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_102": {
+      "materialName": "Material_41.001_8",
+      "baseTexture": "Material_41.001_8_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_103": {
+      "materialName": "Material_41.001_90",
+      "baseTexture": "Bahrainv3001791Mtl_7_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_104": {
+      "materialName": "Material_41.001_91",
+      "baseTexture": "Material_41.001_91_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_105": {
+      "materialName": "Material_41.001_92",
+      "baseTexture": "Material_41.001_92_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_106": {
+      "materialName": "Material_41.001_93",
+      "baseTexture": "Material_41.001_93_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_107": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_108": {
+      "materialName": "Material_41.001_94",
+      "baseTexture": "Material_41.001_94_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    },
+    "Object_109": {
+      "materialName": "Material_41.001_95",
+      "baseTexture": "Material_41.001_95_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Bahrain Circuit/Textures"
+    }
+  },
+  "Shanghai": {
+    "Object_0": {
+      "materialName": "advert_side_a",
+      "baseTexture": "advert_side_a_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_1": {
+      "materialName": "advert_side_a_0",
+      "baseTexture": "advert_side_a_0_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_2": {
+      "materialName": "advert_side_a_1",
+      "baseTexture": "advert_side_a_1_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_3": {
+      "materialName": "advert_side_a_2",
+      "baseTexture": "advert_side_a_2_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_4": {
+      "materialName": "advert_side_a_3",
+      "baseTexture": "advert_side_a_3_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_5": {
+      "materialName": "advert_side_a_4",
+      "baseTexture": "advert_side_a_4_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_6": {
+      "materialName": "advert_side_a_5",
+      "baseTexture": "advert_side_a_5_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_7": {
+      "materialName": "advert_side_a_6",
+      "baseTexture": "advert_side_a_6_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_8": {
+      "materialName": "advert_side_a_7",
+      "baseTexture": "advert_side_a_7_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_9": {
+      "materialName": "advert_side_a_8",
+      "baseTexture": "advert_side_a_8_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_10": {
+      "materialName": "advert_side_a_2",
+      "baseTexture": "advert_side_a_2_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_11": {
+      "materialName": "advert_side_a_9",
+      "baseTexture": "advert_side_a_9_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_12": {
+      "materialName": "advert_side_a_9",
+      "baseTexture": "advert_side_a_9_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_13": {
+      "materialName": "advert_side_a_9",
+      "baseTexture": "advert_side_a_9_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_14": {
+      "materialName": "advert_side_a_9",
+      "baseTexture": "advert_side_a_9_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_15": {
+      "materialName": "advert_side_a_9",
+      "baseTexture": "advert_side_a_9_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_16": {
+      "materialName": "advert_side_a_9",
+      "baseTexture": "advert_side_a_9_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_17": {
+      "materialName": "advert_side_a_9",
+      "baseTexture": "advert_side_a_9_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_18": {
+      "materialName": "advert_side_a_9",
+      "baseTexture": "advert_side_a_9_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_19": {
+      "materialName": "advert_side_a_9",
+      "baseTexture": "advert_side_a_9_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_20": {
+      "materialName": "advert_side_a_9",
+      "baseTexture": "advert_side_a_9_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_21": {
+      "materialName": "advert_side_a_9",
+      "baseTexture": "advert_side_a_9_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_22": {
+      "materialName": "advert_side_a_9",
+      "baseTexture": "advert_side_a_9_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_23": {
+      "materialName": "advert_side_a_10",
+      "baseTexture": "advert_side_a_10_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_24": {
+      "materialName": "advert_side_a_11",
+      "baseTexture": "advert_side_a_11_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_25": {
+      "materialName": "advert_side_a_12",
+      "baseTexture": "advert_side_a_12_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_26": {
+      "materialName": "advert_side_a_13",
+      "baseTexture": "advert_side_a_13_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_27": {
+      "materialName": "advert_side_a_14",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_28": {
+      "materialName": "advert_side_a_15",
+      "baseTexture": "advert_side_a_15_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_29": {
+      "materialName": "advert_side_a_16",
+      "baseTexture": "advert_side_a_16_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_30": {
+      "materialName": "advert_side_a_17",
+      "baseTexture": "advert_side_a_17_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_31": {
+      "materialName": "advert_side_a_18",
+      "baseTexture": "advert_side_a_18_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_32": {
+      "materialName": "advert_side_a_19",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_33": {
+      "materialName": "advert_side_a_20",
+      "baseTexture": "advert_side_a_7_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_34": {
+      "materialName": "advert_side_a_21",
+      "baseTexture": "advert_side_a_21_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_35": {
+      "materialName": "advert_side_a_22",
+      "baseTexture": "advert_side_a_22_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_36": {
+      "materialName": "advert_side_a_23",
+      "baseTexture": "advert_side_a_37_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_37": {
+      "materialName": "advert_side_a_24",
+      "baseTexture": "advert_side_a_24_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_38": {
+      "materialName": "advert_side_a_25",
+      "baseTexture": "advert_side_a_25_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_39": {
+      "materialName": "advert_side_a_26",
+      "baseTexture": "advert_side_a_26_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_40": {
+      "materialName": "advert_side_a_27",
+      "baseTexture": "advert_side_a_27_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_41": {
+      "materialName": "advert_side_a_28",
+      "baseTexture": "advert_side_a_28_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_42": {
+      "materialName": "advert_side_a_29",
+      "baseTexture": "advert_side_a_29_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_43": {
+      "materialName": "advert_side_a_30",
+      "baseTexture": "advert_side_a_30_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_44": {
+      "materialName": "advert_side_a_31",
+      "baseTexture": "advert_side_a_31_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_45": {
+      "materialName": "advert_side_a_32",
+      "baseTexture": "advert_side_a_5_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_46": {
+      "materialName": "advert_side_a_33",
+      "baseTexture": "advert_side_a_33_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_47": {
+      "materialName": "advert_side_a_34",
+      "baseTexture": "advert_side_a_34_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_48": {
+      "materialName": "advert_side_a_35",
+      "baseTexture": "advert_side_a_35_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_49": {
+      "materialName": "advert_side_a_36",
+      "baseTexture": "advert_side_a_36_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_50": {
+      "materialName": "advert_side_a_37",
+      "baseTexture": "advert_side_a_37_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_51": {
+      "materialName": "advert_side_a_38",
+      "baseTexture": "advert_side_a_38_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_52": {
+      "materialName": "advert_side_a_39",
+      "baseTexture": "advert_side_a_39_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_53": {
+      "materialName": "advert_side_a_40",
+      "baseTexture": "advert_side_a_40_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_54": {
+      "materialName": "advert_side_a_41",
+      "baseTexture": "advert_side_a_41_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_55": {
+      "materialName": "advert_side_a_42",
+      "baseTexture": "advert_side_a_42_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_56": {
+      "materialName": "advert_side_a_43",
+      "baseTexture": "advert_side_a_43_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_57": {
+      "materialName": "advert_side_a_44",
+      "baseTexture": "advert_side_a_44_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_58": {
+      "materialName": "advert_side_a_44",
+      "baseTexture": "advert_side_a_44_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_59": {
+      "materialName": "advert_side_a_45",
+      "baseTexture": "advert_side_a_45_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_60": {
+      "materialName": "advert_side_a_46",
+      "baseTexture": "advert_side_a_46_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_61": {
+      "materialName": "advert_side_a_47",
+      "baseTexture": "advert_side_a_47_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_62": {
+      "materialName": "advert_side_a_48",
+      "baseTexture": "advert_side_a_48_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_63": {
+      "materialName": "advert_side_a_48",
+      "baseTexture": "advert_side_a_48_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_64": {
+      "materialName": "advert_side_a_48",
+      "baseTexture": "advert_side_a_48_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_65": {
+      "materialName": "advert_side_a_48",
+      "baseTexture": "advert_side_a_48_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_66": {
+      "materialName": "advert_side_a_49",
+      "baseTexture": "advert_side_a_49_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_67": {
+      "materialName": "advert_side_a_50",
+      "baseTexture": "advert_side_a_50_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_68": {
+      "materialName": "advert_side_a_50",
+      "baseTexture": "advert_side_a_50_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_69": {
+      "materialName": "advert_side_a_51",
+      "baseTexture": "advert_side_a_51_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_70": {
+      "materialName": "advert_side_a_52",
+      "baseTexture": "advert_side_a_52_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_71": {
+      "materialName": "advert_side_a_52",
+      "baseTexture": "advert_side_a_52_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_72": {
+      "materialName": "advert_side_a_53",
+      "baseTexture": "advert_side_a_53_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_73": {
+      "materialName": "advert_side_a_54",
+      "baseTexture": "advert_side_a_54_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_74": {
+      "materialName": "advert_side_a_55",
+      "baseTexture": "advert_side_a_55_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_75": {
+      "materialName": "advert_side_a_56",
+      "baseTexture": "advert_side_a_56_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_76": {
+      "materialName": "advert_side_a_57",
+      "baseTexture": "advert_side_a_57_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_77": {
+      "materialName": "advert_side_a_58",
+      "baseTexture": "advert_side_a_58_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_78": {
+      "materialName": "advert_side_a_59",
+      "baseTexture": "advert_side_a_59_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_79": {
+      "materialName": "advert_side_a_60",
+      "baseTexture": "advert_side_a_60_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_80": {
+      "materialName": "advert_side_a_61",
+      "baseTexture": "advert_side_a_61_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_81": {
+      "materialName": "advert_side_a_62",
+      "baseTexture": "advert_side_a_62_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_82": {
+      "materialName": "advert_side_a_63",
+      "baseTexture": "advert_side_a_1_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_83": {
+      "materialName": "advert_side_a_64",
+      "baseTexture": "advert_side_a_64_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_84": {
+      "materialName": "advert_side_a_65",
+      "baseTexture": "advert_side_a_65_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_85": {
+      "materialName": "advert_side_a_66",
+      "baseTexture": "advert_side_a_66_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_86": {
+      "materialName": "advert_side_a_67",
+      "baseTexture": "advert_side_a_67_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_87": {
+      "materialName": "advert_side_a_68",
+      "baseTexture": "advert_side_a_68_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_88": {
+      "materialName": "advert_side_a_69",
+      "baseTexture": "advert_side_a_69_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_89": {
+      "materialName": "advert_side_a_70",
+      "baseTexture": "advert_side_a_70_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_90": {
+      "materialName": "advert_side_a_71",
+      "baseTexture": "advert_side_a_71_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_91": {
+      "materialName": "advert_side_a_72",
+      "baseTexture": "advert_side_a_72_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_92": {
+      "materialName": "advert_side_a_73",
+      "baseTexture": "advert_side_a_73_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_93": {
+      "materialName": "advert_side_a_74",
+      "baseTexture": "advert_side_a_74_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_94": {
+      "materialName": "advert_side_a_74",
+      "baseTexture": "advert_side_a_74_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_95": {
+      "materialName": "advert_side_a_75",
+      "baseTexture": "advert_side_a_75_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_96": {
+      "materialName": "advert_side_a_76",
+      "baseTexture": "advert_side_a_76_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_97": {
+      "materialName": "advert_side_a_77",
+      "baseTexture": "advert_side_a_77_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_98": {
+      "materialName": "advert_side_a_78",
+      "baseTexture": "advert_side_a_78_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_99": {
+      "materialName": "advert_side_a_79",
+      "baseTexture": "advert_side_a_79_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_100": {
+      "materialName": "advert_side_a_80",
+      "baseTexture": "advert_side_a_80_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_101": {
+      "materialName": "advert_side_a_81",
+      "baseTexture": "advert_side_a_81_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_102": {
+      "materialName": "advert_side_a_82",
+      "baseTexture": "advert_side_a_82_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_103": {
+      "materialName": "advert_side_a_83",
+      "baseTexture": "advert_side_a_83_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_104": {
+      "materialName": "advert_side_a_84",
+      "baseTexture": "advert_side_a_84_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_105": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_106": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_107": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_108": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_109": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_110": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_111": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_112": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_113": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_114": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_115": {
+      "materialName": "advert_side_a_85",
+      "baseTexture": "advert_side_a_85_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_116": {
+      "materialName": "advert_side_a_85",
+      "baseTexture": "advert_side_a_85_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_117": {
+      "materialName": "advert_side_a_86",
+      "baseTexture": "advert_side_a_86_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_118": {
+      "materialName": "advert_side_a_87",
+      "baseTexture": "advert_side_a_87_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_119": {
+      "materialName": "advert_side_a_87",
+      "baseTexture": "advert_side_a_87_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_120": {
+      "materialName": "advert_side_a_88",
+      "baseTexture": "advert_side_a_88_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_121": {
+      "materialName": "advert_side_a_89",
+      "baseTexture": "advert_side_a_6_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_122": {
+      "materialName": "advert_side_a_90",
+      "baseTexture": "advert_side_a_90_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_123": {
+      "materialName": "advert_side_a_91",
+      "baseTexture": "advert_side_a_91_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_124": {
+      "materialName": "advert_side_a_92",
+      "baseTexture": "advert_side_a_92_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_125": {
+      "materialName": "advert_side_a_93",
+      "baseTexture": "advert_side_a_93_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_126": {
+      "materialName": "advert_side_a_93",
+      "baseTexture": "advert_side_a_93_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_127": {
+      "materialName": "advert_side_a_94",
+      "baseTexture": "advert_side_a_94_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_128": {
+      "materialName": "advert_side_a_94",
+      "baseTexture": "advert_side_a_94_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_129": {
+      "materialName": "advert_side_a_95",
+      "baseTexture": "advert_side_a_95_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_130": {
+      "materialName": "advert_side_a_95",
+      "baseTexture": "advert_side_a_95_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_131": {
+      "materialName": "advert_side_a_96",
+      "baseTexture": "advert_side_a_96_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    },
+    "Object_132": {
+      "materialName": "advert_side_a_97",
+      "baseTexture": "advert_side_a_97_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Shangai/Textures"
+    }
+  },
+  "Suzuka": {
+    "Object_0": {
+      "materialName": "material",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_1": {
+      "materialName": "282_0",
+      "baseTexture": "282_0_baseColor.png",
+      "normalTexture": "282_0_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_2": {
+      "materialName": "282_1",
+      "baseTexture": "282_1_baseColor.png",
+      "normalTexture": "282_1_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_3": {
+      "materialName": "282_2",
+      "baseTexture": "282_2_baseColor.png",
+      "normalTexture": "282_2_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_4": {
+      "materialName": "282_3",
+      "baseTexture": "282_3_baseColor.png",
+      "normalTexture": "282_3_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_5": {
+      "materialName": "282_4",
+      "baseTexture": "282_4_baseColor.png",
+      "normalTexture": "282_4_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_6": {
+      "materialName": "282_5",
+      "baseTexture": "282_5_baseColor.png",
+      "normalTexture": "282_5_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_7": {
+      "materialName": "282_6",
+      "baseTexture": "282_6_baseColor.png",
+      "normalTexture": "282_6_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_8": {
+      "materialName": "282_7",
+      "baseTexture": "282_7_baseColor.png",
+      "normalTexture": "282_7_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_9": {
+      "materialName": "282_8",
+      "baseTexture": "282_8_baseColor.png",
+      "normalTexture": "282_8_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_10": {
+      "materialName": "282_9",
+      "baseTexture": "282_9_baseColor.png",
+      "normalTexture": "282_9_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_11": {
+      "materialName": "282_10",
+      "baseTexture": "282_10_baseColor.png",
+      "normalTexture": "282_10_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_12": {
+      "materialName": "282_11",
+      "baseTexture": "282_11_baseColor.png",
+      "normalTexture": "282_11_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_13": {
+      "materialName": "282_12",
+      "baseTexture": "282_12_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_14": {
+      "materialName": "282_13",
+      "baseTexture": "282_13_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_15": {
+      "materialName": "282_14",
+      "baseTexture": "282_14_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_16": {
+      "materialName": "282_15",
+      "baseTexture": "282_15_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_17": {
+      "materialName": "282_16",
+      "baseTexture": "282_16_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_18": {
+      "materialName": "282_17",
+      "baseTexture": "282_17_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_19": {
+      "materialName": "282_18",
+      "baseTexture": "282_18_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_20": {
+      "materialName": "282_19",
+      "baseTexture": "282_19_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_21": {
+      "materialName": "282_20",
+      "baseTexture": "282_20_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_22": {
+      "materialName": "282_21",
+      "baseTexture": "282_21_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_23": {
+      "materialName": "282_22",
+      "baseTexture": "282_22_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_24": {
+      "materialName": "282_23",
+      "baseTexture": "282_23_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_25": {
+      "materialName": "282_24",
+      "baseTexture": "282_24_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_26": {
+      "materialName": "282_25",
+      "baseTexture": "282_25_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_27": {
+      "materialName": "282_26",
+      "baseTexture": "282_26_baseColor.png",
+      "normalTexture": "282_12_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_28": {
+      "materialName": "282_27",
+      "baseTexture": "282_27_baseColor.png",
+      "normalTexture": "282_27_normal.png",
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_29": {
+      "materialName": "282_28",
+      "baseTexture": "282_28_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_30": {
+      "materialName": "282_29",
+      "baseTexture": "282_29_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_31": {
+      "materialName": "282_30",
+      "baseTexture": "282_30_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_32": {
+      "materialName": "282_31",
+      "baseTexture": "282_31_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_33": {
+      "materialName": "282_32",
+      "baseTexture": "282_32_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_34": {
+      "materialName": "282_33",
+      "baseTexture": "282_33_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_35": {
+      "materialName": "282_34",
+      "baseTexture": "282_34_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_36": {
+      "materialName": "282_35",
+      "baseTexture": "282_35_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_37": {
+      "materialName": "282_36",
+      "baseTexture": "282_36_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_38": {
+      "materialName": "282_37",
+      "baseTexture": "282_37_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_39": {
+      "materialName": "282_38",
+      "baseTexture": "282_38_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_40": {
+      "materialName": "282_39",
+      "baseTexture": "282_39_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_41": {
+      "materialName": "282_40",
+      "baseTexture": "282_40_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_42": {
+      "materialName": "282_41",
+      "baseTexture": "282_41_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_43": {
+      "materialName": "282_42",
+      "baseTexture": "282_42_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_44": {
+      "materialName": "282_43",
+      "baseTexture": "282_43_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_45": {
+      "materialName": "282_44",
+      "baseTexture": "282_44_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_46": {
+      "materialName": "282_45",
+      "baseTexture": "282_45_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_47": {
+      "materialName": "282_46",
+      "baseTexture": "282_46_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_48": {
+      "materialName": "282_47",
+      "baseTexture": "282_47_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_49": {
+      "materialName": "282_48",
+      "baseTexture": "282_48_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_50": {
+      "materialName": "282_49",
+      "baseTexture": "282_49_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_51": {
+      "materialName": "282_50",
+      "baseTexture": "282_50_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_52": {
+      "materialName": "282_51",
+      "baseTexture": "282_51_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_53": {
+      "materialName": "282_52",
+      "baseTexture": "282_52_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_54": {
+      "materialName": "282_53",
+      "baseTexture": "282_53_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_55": {
+      "materialName": "282_54",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_56": {
+      "materialName": "282_55",
+      "baseTexture": "282_55_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_57": {
+      "materialName": "282_56",
+      "baseTexture": "282_56_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_58": {
+      "materialName": "282_57",
+      "baseTexture": "282_57_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_59": {
+      "materialName": "282_58",
+      "baseTexture": "282_58_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_60": {
+      "materialName": "282_59",
+      "baseTexture": "282_59_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_61": {
+      "materialName": "282_60",
+      "baseTexture": "282_60_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_62": {
+      "materialName": "282_61",
+      "baseTexture": "282_61_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_63": {
+      "materialName": "282_62",
+      "baseTexture": "282_62_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_64": {
+      "materialName": "282_63",
+      "baseTexture": "282_63_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_65": {
+      "materialName": "282_64",
+      "baseTexture": "282_64_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_66": {
+      "materialName": "282_65",
+      "baseTexture": "282_65_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_67": {
+      "materialName": "282_66",
+      "baseTexture": "282_66_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_68": {
+      "materialName": "282_67",
+      "baseTexture": "282_67_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_69": {
+      "materialName": "282_68",
+      "baseTexture": "282_68_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_70": {
+      "materialName": "282_69",
+      "baseTexture": "282_69_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_71": {
+      "materialName": "282_70",
+      "baseTexture": "282_70_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_72": {
+      "materialName": "282_71",
+      "baseTexture": "282_71_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_73": {
+      "materialName": "282_72",
+      "baseTexture": "282_72_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_74": {
+      "materialName": "282_73",
+      "baseTexture": "282_73_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_75": {
+      "materialName": "282_74",
+      "baseTexture": "282_74_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_76": {
+      "materialName": "282_75",
+      "baseTexture": "282_75_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_77": {
+      "materialName": "282_76",
+      "baseTexture": "282_76_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_78": {
+      "materialName": "282_77",
+      "baseTexture": "282_77_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_79": {
+      "materialName": "282_78",
+      "baseTexture": "282_78_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_80": {
+      "materialName": "282_79",
+      "baseTexture": "282_79_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_81": {
+      "materialName": "282_80",
+      "baseTexture": "282_80_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_82": {
+      "materialName": "282_81",
+      "baseTexture": "282_81_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_83": {
+      "materialName": "282_82",
+      "baseTexture": "282_82_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_84": {
+      "materialName": "282_83",
+      "baseTexture": "282_83_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_85": {
+      "materialName": "282_84",
+      "baseTexture": "282_84_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_86": {
+      "materialName": "282_85",
+      "baseTexture": "282_85_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_87": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_88": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_89": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_90": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_91": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_92": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_93": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_94": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_95": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_96": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_97": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_98": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_99": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_100": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_101": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_102": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_103": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_104": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_105": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_106": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_107": {
+      "materialName": "Merged_materials",
+      "baseTexture": "Merged_materials_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_108": {
+      "materialName": "282_86",
+      "baseTexture": "282_86_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_109": {
+      "materialName": "282_87",
+      "baseTexture": "282_87_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_110": {
+      "materialName": "282_88",
+      "baseTexture": "282_88_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_111": {
+      "materialName": "282_89",
+      "baseTexture": "282_89_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_112": {
+      "materialName": "282_90",
+      "baseTexture": "282_90_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_113": {
+      "materialName": "282_91",
+      "baseTexture": "282_91_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_114": {
+      "materialName": "282_92",
+      "baseTexture": "282_92_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_115": {
+      "materialName": "282_93",
+      "baseTexture": "282_93_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_116": {
+      "materialName": "282_94",
+      "baseTexture": "282_94_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_117": {
+      "materialName": "282_95",
+      "baseTexture": "282_95_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_118": {
+      "materialName": "282_96",
+      "baseTexture": "282_96_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    },
+    "Object_119": {
+      "materialName": "282_97",
+      "baseTexture": "282_97_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Suzuka Circuit/Textures"
+    }
+  },
+  "YasMarina": {
+    "Object_0": {
+      "materialName": "tentrail",
+      "baseTexture": "tentrail_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_1": {
+      "materialName": "tentrail_0",
+      "baseTexture": "tentrail_0_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_2": {
+      "materialName": "tentrail_1",
+      "baseTexture": "tentrail_1_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_3": {
+      "materialName": "tentrail_2",
+      "baseTexture": "tentrail_2_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_4": {
+      "materialName": "tentrail_3",
+      "baseTexture": "tentrail_3_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_5": {
+      "materialName": "tentrail_4",
+      "baseTexture": "tentrail_4_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_6": {
+      "materialName": "tentrail_5",
+      "baseTexture": "tentrail_5_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_7": {
+      "materialName": "tentrail_6",
+      "baseTexture": "tentrail_6_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_8": {
+      "materialName": "tentrail_7",
+      "baseTexture": "tentrail_7_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_9": {
+      "materialName": "tentrail_8",
+      "baseTexture": "tentrail_8_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_10": {
+      "materialName": "tentrail_8",
+      "baseTexture": "tentrail_8_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_11": {
+      "materialName": "tentrail_9",
+      "baseTexture": "tentrail_9_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_12": {
+      "materialName": "tentrail_10",
+      "baseTexture": "tentrail_10_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_13": {
+      "materialName": "tentrail_11",
+      "baseTexture": "tentrail_11_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_14": {
+      "materialName": "tentrail_12",
+      "baseTexture": "tentrail_12_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_15": {
+      "materialName": "tentrail_13",
+      "baseTexture": "tentrail_13_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_16": {
+      "materialName": "tentrail_14",
+      "baseTexture": "tentrail_14_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_17": {
+      "materialName": "tentrail_15",
+      "baseTexture": "tentrail_15_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_18": {
+      "materialName": "tentrail_16",
+      "baseTexture": "tentrail_16_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_19": {
+      "materialName": "tentrail_17",
+      "baseTexture": "tentrail_17_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_20": {
+      "materialName": "tentrail_17",
+      "baseTexture": "tentrail_17_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_21": {
+      "materialName": "tentrail_18",
+      "baseTexture": "tentrail_18_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_22": {
+      "materialName": "tentrail_19",
+      "baseTexture": "tentrail_19_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_23": {
+      "materialName": "tentrail_20",
+      "baseTexture": "tentrail_20_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_24": {
+      "materialName": "tentrail_21",
+      "baseTexture": "tentrail_20_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_25": {
+      "materialName": "tentrail_22",
+      "baseTexture": "tentrail_22_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_26": {
+      "materialName": "tentrail_23",
+      "baseTexture": "tentrail_23_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_27": {
+      "materialName": "tentrail_24",
+      "baseTexture": "tentrail_24_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_28": {
+      "materialName": "tentrail_25",
+      "baseTexture": "tentrail_25_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_29": {
+      "materialName": "tentrail_14",
+      "baseTexture": "tentrail_14_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_30": {
+      "materialName": "tentrail_26",
+      "baseTexture": "tentrail_26_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_31": {
+      "materialName": "tentrail_27",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_32": {
+      "materialName": "tentrail_28",
+      "baseTexture": "tentrail_19_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_33": {
+      "materialName": "tentrail_29",
+      "baseTexture": "tentrail_19_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_34": {
+      "materialName": "tentrail_30",
+      "baseTexture": "tentrail_30_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_35": {
+      "materialName": "tentrail_31",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_36": {
+      "materialName": "tentrail_32",
+      "baseTexture": "tentrail_32_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_37": {
+      "materialName": "tentrail_33",
+      "baseTexture": "tentrail_33_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_38": {
+      "materialName": "tentrail_34",
+      "baseTexture": "tentrail_34_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_39": {
+      "materialName": "tentrail_35",
+      "baseTexture": "tentrail_35_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_40": {
+      "materialName": "tentrail_36",
+      "baseTexture": "tentrail_36_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_41": {
+      "materialName": "tentrail_37",
+      "baseTexture": "tentrail_37_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_42": {
+      "materialName": "tentrail_38",
+      "baseTexture": "tentrail_38_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_43": {
+      "materialName": "tentrail_39",
+      "baseTexture": "tentrail_39_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_44": {
+      "materialName": "tentrail_40",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_45": {
+      "materialName": "tentrail_41",
+      "baseTexture": "tentrail_41_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_46": {
+      "materialName": "tentrail_42",
+      "baseTexture": "tentrail_42_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_47": {
+      "materialName": "tentrail_43",
+      "baseTexture": "tentrail_43_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_48": {
+      "materialName": "tentrail_44",
+      "baseTexture": "tentrail_8_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_49": {
+      "materialName": "tentrail_45",
+      "baseTexture": "tentrail_45_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_50": {
+      "materialName": "tentrail_46",
+      "baseTexture": "tentrail_46_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_51": {
+      "materialName": "tentrail_47",
+      "baseTexture": "tentrail_47_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_52": {
+      "materialName": "tentrail_48",
+      "baseTexture": "tentrail_48_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_53": {
+      "materialName": "tentrail_49",
+      "baseTexture": "tentrail_49_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_54": {
+      "materialName": "tentrail_50",
+      "baseTexture": "tentrail_50_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_55": {
+      "materialName": "tentrail_51",
+      "baseTexture": "tentrail_51_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_56": {
+      "materialName": "tentrail_52",
+      "baseTexture": "tentrail_52_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_57": {
+      "materialName": "tentrail_53",
+      "baseTexture": "tentrail_53_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_58": {
+      "materialName": "tentrail_54",
+      "baseTexture": "tentrail_54_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_59": {
+      "materialName": "tentrail_55",
+      "baseTexture": "tentrail_55_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_60": {
+      "materialName": "tentrail_56",
+      "baseTexture": "tentrail_56_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_61": {
+      "materialName": "tentrail_57",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_62": {
+      "materialName": "tentrail_57",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_63": {
+      "materialName": "tentrail_57",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_64": {
+      "materialName": "tentrail_57",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_65": {
+      "materialName": "tentrail_57",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_66": {
+      "materialName": "tentrail_57",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_67": {
+      "materialName": "tentrail_58",
+      "baseTexture": "tentrail_58_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_68": {
+      "materialName": "tentrail_59",
+      "baseTexture": "tentrail_59_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_69": {
+      "materialName": "tentrail_60",
+      "baseTexture": "tentrail_60_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_70": {
+      "materialName": "tentrail_61",
+      "baseTexture": "tentrail_61_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_71": {
+      "materialName": "tentrail_62",
+      "baseTexture": "tentrail_62_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_72": {
+      "materialName": "tentrail_63",
+      "baseTexture": "tentrail_14_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_73": {
+      "materialName": "tentrail_64",
+      "baseTexture": "tentrail_64_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_74": {
+      "materialName": "tentrail_65",
+      "baseTexture": "tentrail_65_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_75": {
+      "materialName": "tentrail_66",
+      "baseTexture": "tentrail_66_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_76": {
+      "materialName": "tentrail_67",
+      "baseTexture": "tentrail_50_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_77": {
+      "materialName": "tentrail_68",
+      "baseTexture": "tentrail_68_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_78": {
+      "materialName": "tentrail_69",
+      "baseTexture": "tentrail_69_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_79": {
+      "materialName": "tentrail_70",
+      "baseTexture": "tentrail_70_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_80": {
+      "materialName": "tentrail_71",
+      "baseTexture": "tentrail_71_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_81": {
+      "materialName": "tentrail_72",
+      "baseTexture": "tentrail_72_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_82": {
+      "materialName": "tentrail_73",
+      "baseTexture": "tentrail_73_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_83": {
+      "materialName": "tentrail_74",
+      "baseTexture": "tentrail_74_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_84": {
+      "materialName": "tentrail_75",
+      "baseTexture": "tentrail_75_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_85": {
+      "materialName": "tentrail_76",
+      "baseTexture": "tentrail_76_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_86": {
+      "materialName": "tentrail_77",
+      "baseTexture": "tentrail_77_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_87": {
+      "materialName": "tentrail_78",
+      "baseTexture": "tentrail_78_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_88": {
+      "materialName": "tentrail_79",
+      "baseTexture": "tentrail_79_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_89": {
+      "materialName": "tentrail_80",
+      "baseTexture": "tentrail_80_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_90": {
+      "materialName": "tentrail_81",
+      "baseTexture": "tentrail_81_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_91": {
+      "materialName": "tentrail_82",
+      "baseTexture": "tentrail_82_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_92": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_93": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_94": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_95": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_96": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_97": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_98": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_99": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_100": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_101": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_102": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_103": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_104": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_105": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_106": {
+      "materialName": "Merged_materials",
+      "baseTexture": null,
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_107": {
+      "materialName": "tentrail_83",
+      "baseTexture": "tentrail_83_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_108": {
+      "materialName": "tentrail_84",
+      "baseTexture": "tentrail_84_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_109": {
+      "materialName": "tentrail_85",
+      "baseTexture": "tentrail_85_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_110": {
+      "materialName": "tentrail_86",
+      "baseTexture": "tentrail_86_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_111": {
+      "materialName": "tentrail_86",
+      "baseTexture": "tentrail_86_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_112": {
+      "materialName": "tentrail_86",
+      "baseTexture": "tentrail_86_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_113": {
+      "materialName": "tentrail_87",
+      "baseTexture": "tentrail_87_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_114": {
+      "materialName": "tentrail_88",
+      "baseTexture": "tentrail_88_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_115": {
+      "materialName": "tentrail_89",
+      "baseTexture": "tentrail_89_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_116": {
+      "materialName": "tentrail_89",
+      "baseTexture": "tentrail_89_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_117": {
+      "materialName": "tentrail_90",
+      "baseTexture": "tentrail_90_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_118": {
+      "materialName": "tentrail_90",
+      "baseTexture": "tentrail_90_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_119": {
+      "materialName": "tentrail_91",
+      "baseTexture": "tentrail_91_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_120": {
+      "materialName": "tentrail_92",
+      "baseTexture": "tentrail_92_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_121": {
+      "materialName": "tentrail_93",
+      "baseTexture": "tentrail_93_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_122": {
+      "materialName": "tentrail_94",
+      "baseTexture": "tentrail_94_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_123": {
+      "materialName": "tentrail_94",
+      "baseTexture": "tentrail_94_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_124": {
+      "materialName": "tentrail_95",
+      "baseTexture": "tentrail_95_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_125": {
+      "materialName": "tentrail_96",
+      "baseTexture": "tentrail_96_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    },
+    "Object_126": {
+      "materialName": "tentrail_97",
+      "baseTexture": "tentrail_97_baseColor.png",
+      "normalTexture": null,
+      "texDirectory": "Assets/Yas Mariana/Textures"
+    }
+  }
+}

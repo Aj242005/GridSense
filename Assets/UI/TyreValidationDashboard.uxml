@@ -1,0 +1,130 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/TyreValidationDashboard.uss?fileID=7433441132597879392&amp;guid=5809ee9176e40b5409700aec4e3bca64&amp;type=3#TyreValidationDashboard" />
+    <ui:VisualElement name="ScreenOverlay" class="screen-overlay">
+        <!-- Persistent Right-Side Pit-Wall Dashboard Sidebar -->
+        <ui:VisualElement name="DashboardRoot" class="dashboard-sidebar">
+            <ui:ScrollView class="sidebar-scrollview" show-vertical-scroller="false">
+                
+                <!-- 1. Header & Live AI Badges -->
+                <ui:VisualElement class="sidebar-header">
+                    <ui:VisualElement class="header-titles">
+                        <ui:Label text="GRIDSENSE // PIT-WALL" class="sidebar-main-title" />
+                        <ui:Label text="LIVE TELEMETRY &amp; AI STRATEGY" class="sidebar-subtitle" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="header-badges">
+                        <ui:Label text="SENTIS 50Hz" class="badge badge-green" />
+                        <ui:Label text="PPO MGU-K" class="badge" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <!-- 2. Live Vehicle Dynamics Strip -->
+                <ui:VisualElement class="sidebar-gauge-card">
+                    <ui:VisualElement class="gauge-left">
+                        <ui:Label name="LiveSpeedLabel" text="0" class="speed-number" />
+                        <ui:Label text="KM / H" class="speed-unit" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="gauge-right">
+                        <ui:Label name="LiveGearLabel" text="N" class="gear-badge" />
+                        <ui:Label name="LiveRpmLabel" text="0 RPM" class="rpm-text" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <!-- 3. Energy & Deployment Section (Sentis PPO Policy) -->
+                <ui:VisualElement class="sidebar-section">
+                    <ui:Label text="ENERGY STORE (BATTERY SoC)" class="section-title" />
+                    <ui:VisualElement class="section-card">
+                        <ui:VisualElement class="card-row">
+                            <ui:Label text="BATTERY LEVEL" class="card-row-label" />
+                            <ui:Label name="EnergySocLabel" text="85.0%" class="card-row-value" style="color: #00e5ff;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="progress-bar-container">
+                            <ui:VisualElement name="EnergyProgressBar" class="progress-bar-fill" style="width: 85%; background-color: #00e5ff;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="card-row" style="margin-top: 4px;">
+                            <ui:Label name="EnergySubtextLabel" text="3.40 MJ / 4.00 MJ" class="card-subtext" />
+                            <ui:Label name="DeployModeLabel" text="BALANCED" class="badge badge-green" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="directive-box">
+                            <ui:Label name="TacticalDirectiveLabel" text="PPO DIRECTIVE: Balanced energy deployment active" class="directive-text" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <!-- 4. Tyre Degradation & Thermal State -->
+                <ui:VisualElement class="sidebar-section">
+                    <ui:Label text="TYRE DEGRADATION &amp; THERMALS" class="section-title" />
+                    <ui:VisualElement class="section-card">
+                        <ui:VisualElement class="dual-metrics-row">
+                            <ui:VisualElement class="metric-half">
+                                <ui:Label text="AI INFERRED WEAR" class="card-row-label" />
+                                <ui:Label name="AiWearLabel" text="0.0%" class="card-value-medium" style="color: #00e5ff;" />
+                                <ui:VisualElement class="progress-bar-container">
+                                    <ui:VisualElement name="AiProgressBar" class="progress-bar-fill" style="width: 0%;" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="metric-half">
+                                <ui:Label text="PHYSICAL WEAR" class="card-row-label" />
+                                <ui:Label name="PhysicsWearLabel" text="0.0%" class="card-value-medium" style="color: #ffb703;" />
+                                <ui:VisualElement class="progress-bar-container">
+                                    <ui:VisualElement name="PhysicsProgressBar" class="progress-bar-fill progress-bar-fill-amber" style="width: 0%;" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="card-row" style="margin-top: 6px;">
+                            <ui:Label name="ResidualLabel" text="Δ 0.0% [CONVERGED]" class="card-subtext" style="color: #06d6a0;" />
+                            <ui:Label name="LatencyLabel" text="Sentis: 420 µs" class="card-subtext" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="corner-grid">
+                            <ui:Label name="CornerFLLabel" text="FL: 0% | 95°C" class="corner-item" />
+                            <ui:Label name="CornerFRLabel" text="FR: 0% | 95°C" class="corner-item" />
+                            <ui:Label name="CornerRLLabel" text="RL: 0% | 95°C" class="corner-item" />
+                            <ui:Label name="CornerRRLabel" text="RR: 0% | 95°C" class="corner-item" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <!-- 5. Real-Time Decomposed Attributions -->
+                <ui:VisualElement class="sidebar-section">
+                    <ui:Label text="ENVIRONMENTAL ATTRIBUTIONS" class="section-title" />
+                    <ui:VisualElement class="attr-grid">
+                        <ui:VisualElement class="attr-box">
+                            <ui:Label text="FUEL GAIN" class="attr-box-label" />
+                            <ui:Label name="AttrFuelBurn" text="-0.00s" class="attr-box-val attr-negative" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="attr-box">
+                            <ui:Label text="DIRTY AIR" class="attr-box-label" />
+                            <ui:Label name="AttrDirtyAir" text="+0.00s" class="attr-box-val attr-positive" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="attr-box">
+                            <ui:Label text="TRACK EVO" class="attr-box-label" />
+                            <ui:Label name="AttrTrackEvo" text="-0.00s" class="attr-box-val attr-negative" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="attr-box">
+                            <ui:Label text="PACE DELTA" class="attr-box-label" />
+                            <ui:Label name="AttrTyreDeg" text="+0.00s" class="attr-box-val attr-positive" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <!-- 6. Stint Degradation Validation Chart -->
+                <ui:VisualElement class="sidebar-section">
+                    <ui:VisualElement class="chart-header-row">
+                        <ui:Label text="DEGRADATION (±1σ)" class="section-title" style="margin-bottom: 0;" />
+                        <ui:VisualElement class="stint-tabs-mini">
+                            <ui:Button name="TabAlonso" text="Bahrain" class="mini-tab mini-tab-active" />
+                            <ui:Button name="TabVerstappen" text="Spain H" class="mini-tab" />
+                            <ui:Button name="TabHamilton" text="Spain S" class="mini-tab" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ValidationChartCanvas" class="chart-canvas-sidebar" />
+                </ui:VisualElement>
+
+                <!-- 7. Footer Shortcut Hints -->
+                <ui:VisualElement class="sidebar-footer">
+                    <ui:Label text="[TAB] Toggle | [T] Autopilot | [1-4] Tracks | [R] Reset" class="footer-hint" />
+                </ui:VisualElement>
+
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,36 @@
+{
+  "model_type": "ExplainableBoostingRegressor (EBM)",
+  "circuits_trained": [
+    "Bahrain",
+    "Spain",
+    "Austria",
+    "Abu Dhabi"
+  ],
+  "total_samples": 4309,
+  "metrics": {
+    "train_r2": 0.305920971549001,
+    "test_r2": 0.30424605187645226,
+    "train_mae_sec": 0.5118459345016535,
+    "test_mae_sec": 0.5268912182855184,
+    "test_rmse_sec": 0.7014009345054875
+  },
+  "feature_importances": {
+    "FuelRemainingKg": 0.19098922348667308,
+    "LapInStint": 0.18414394491943864,
+    "SessionProgression": 0.13503096416652652,
+    "GapAheadSec": 0.11326743935284211,
+    "Compound": 0.09492290313751091,
+    "LapInStint & FuelRemainingKg": 0.052166946255185274,
+    "TrackTemp": 0.04305527702865783,
+    "FuelRemainingKg & Compound": 0.04014952861350594,
+    "SessionProgression & Compound": 0.03918662458415743,
+    "TrackTemp & Compound": 0.03414597137950012
+  },
+  "isolation_summary": {
+    "fuel_effect_range_sec": 0.6431578477720725,
+    "traffic_dirty_air_range_sec": 0.6060917573291812,
+    "tyre_life_range_sec": 0.7650250319241809,
+    "track_evolution_range_sec": 0.4580750080936845,
+    "track_temp_range_sec": 0.6242425143744258
+  }
+}
